@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>astro afim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="nu[nudesign.com.br]">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/reset.css" rel="stylesheet">
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="docs/assets/css/structure.css" rel="stylesheet">
+    <link href="docs/assets/css/application.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+    
+    <!-- script que liga e desliga do grid -->
+    <script type="text/javascript">
+    	function toggle_grid()
+    	{
+    		var grid = document.getElementById('grid');
+    		if ( grid.style.display == 'none' )
+    		{
+    			grid.style.display = 'block';
+    		}
+    		else
+    		{
+    			grid.style.display = 'none';
+    		}
+    	}
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- grid -->
+    <div class="over_grid" id="grid" style="display:block">&nbsp;</div>	
+    <div style="position: absolute; bottom: 10px; z-index: 2"><a href="javascript://" onclick="toggle_grid()">grid on / off</a></div>
+    
+    <div class="container_16">
+      
+      <header id="header" class="grid_12">
+        <a href=""><img src="img/astro_afim.png"></a>
+        <p>
+          <a href="">como funciona?</a><br>
+          <a href="">convide um amigo</a>
+        </p>
+        
+        <ul class="nav nav-tabs mainNav">
+          <li class="active">
+            <a href="">compatibilidade</a>
+          </li>
+          <li>
+            <a href="">meus selecionados</a>
+            <span class="badge badge-important">6</span>
+          </li>
+          <li>
+            <a href="">quem me selecionou</a>
+            <span class="badge badge-important">8</span>
+          </li>
+          <li>
+            <a href="">mensagens</a>
+            <span class="badge badge-important">4</span>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <img src="http://graph.facebook.com/767528212/picture" class="avatar">
+              minha conta
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="">configurações</a>
+              </li>
+              <li>
+                <a href="">meus créditos</a>
+              </li>
+              <li>
+                <a href="">meu mapa natal</a>
+              </li>
+              <li>
+                <a href="">pessoas bloqueadas</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="">logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>  
+        <ul class="nav nav-pills filtersContainer">
+          <li class="grid userSearch alpha">
+            <input type="text" value="usuário">
+          </li>
+          <li class="filtersButton grid">
+            <a href="#" style="padding: 6px 10px">filtros +</a>
+            <ul class="filtersContent alpha">
+              <li>
+                <input type="checkbox"> somente amigos
+              </li>
+              <li>
+                idade
+                <input type="text" class="s"> a <input type="text" class="s">
+              </li>
+              <li>
+                cidade
+                <input type="text" class="m">
+                <br>
+                <input type="checkbox"> incluir sem cidade
+              </li>
+              <li class="divider"></li>
+              <li>
+                <input type="submit" value="filtrar" class="btn btn-primary">
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown grid_2">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ordenar por <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="">amor</a></li>
+              <li><a href="">sexo</a></li>
+              <li><a href="">amizade</a></li>
+              <li><a href="">negócios</a></li>
+            </ul>
+          </li>
+          <li class="paginationContainer">
+            <div class="pagination">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li class="active">
+                <a href="#">1</a>
+                </li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </li>  
+        </ul>
+      </header><!-- fecha header -->
+      
+      <section class="grid_12">
+        <article class="userContainer clearfix">
+          <div class="userInfos grid_4 alpha">
+            <a href=""><img src="img/userThumb.jpg" alt=""></a>
+            <h1 class="firstLine"><a href=""><strong>nome do usuário</strong></a></h1><br>
+            <h2>idade — cidade</h2><br>
+            <h3>signo — ascendente</h3><br>
+          </div>
+          <ul class="userCompatibilities grid_8 omega">
+            <li class="grid_2 alpha">
+              <label>amor</label>
+              <div class="progress">
+                <div class="bar" style="width: 60%;">60%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>
+            </li>
+            <li class="grid_2">
+              <label>sexo</label>
+              <div class="progress">
+                <div class="bar low" style="width: 15%;">15%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+            <li class="grid_2">
+              <label>amizade</label>
+              <div class="progress">
+                <div class="bar" style="width: 15%;">15%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+            <li class="grid_2 omega">
+              <label>negócios</label>
+              <div class="progress">
+                <div class="bar mid" style="width: 45%;">45%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+          </ul>
+          <div class="details clearfix">
+            <ul>
+              <!-- header da lista -->
+              <li class="listHeader clearfix">
+                <div class="grid_2 alpha">
+                  <label>você</label>
+                </div>
+                <div class="grid_1">
+                  &nbsp;
+                </div>
+                <div class="grid_2">
+                  <label>a outra pessoa</label>
+                </div>
+                <div class="grid_1">
+                  <label>pontos</label>
+                </div>
+                <div class="grid_6 omega">
+                  <label>explicação</label>
+                  <a href=""><i class="icon-remove"></i></a>
+                </div>
+              </li>
+              
+              <!-- linhas da lista -->
+              <li class="clearfix">
+                <div class="grid_2 alpha">
+                  <span>signo1</span>
+                </div>
+                <div class="grid_1">
+                  &nbsp;
+                </div>
+                <div class="grid_2">
+                  <span>signo2</span>
+                </div>
+                <div class="grid_1">
+                  <span>+1</span>
+                </div>
+                <div class="description grid_6 omega">
+                  <p>explicação e mais alguns textos para pular de linha e ver como funciona o hover explicação e mais alguns textos para pular de linha.</p>
+                  <i class="icon-plus-sign"></i>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="grid_2 alpha">
+                  <span>signo1</span>
+                </div>
+                <div class="grid_1">
+                  &nbsp;
+                </div>
+                <div class="grid_2">
+                  <span>signo2</span>
+                </div>
+                <div class="grid_1">
+                  <span>+1</span>
+                </div>
+                <div class="description grid_6 omega">
+                  <p>explicação e mais alguns textos para pular de linha e ver como funciona o hover explicação e mais alguns textos para pular de linha.</p>
+                  <i class="icon-plus-sign"></i>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="grid_2 alpha">
+                  <span>signo1</span>
+                </div>
+                <div class="grid_1">
+                  &nbsp;
+                </div>
+                <div class="grid_2">
+                  <span>signo2</span>
+                </div>
+                <div class="grid_1">
+                  <span>+1</span>
+                </div>
+                <div class="description grid_6 omega">
+                  <p>explicação</p>
+                  <i class="icon-plus-sign"></i>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="grid_2 alpha">
+                  <span>signo1</span>
+                </div>
+                <div class="grid_1">
+                  &nbsp;
+                </div>
+                <div class="grid_2">
+                  <span>signo2</span>
+                </div>
+                <div class="grid_1">
+                  <span>+1</span>
+                </div>
+                <div class="description grid_6 omega">
+                  <p>explicação</p>
+                  <i class="icon-plus-sign"></i>
+                </div>
+              </li>
+              <li class="finalScore clearfix">
+                <div class="grid_2 push_3">
+                  <span>total</span>
+                </div>
+                <div class="grid_4 push_3">
+                  <span>35 pontos</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="actions clearfix">
+            <ul class="grid_4 alpha">
+              <li>
+                <input type="checkbox">
+                <label>selecionar</label>
+              </li>
+              <li>
+                <input type="checkbox">
+                <label>bloquear</label>
+              </li>
+            </ul>
+            <ul class="grid_8 moreInfo omega">
+              <li class="active">
+                <i class="icon-comment"></i>
+                <label><a href="">mensagens</a></label>
+              </li>
+              <li>
+                <i class="icon-eye-close"></i>
+                <label><a href="">mapa natal</a></label>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="actionsContainer clearfix">
+            <div class="grid_4 alpha">
+              <p>
+                <strong>mapa natal</strong><br>
+                <br>
+                texto explicativo sobre o mapa.
+              </p>
+            </div>
+            <div class="grid_8 omega">
+              <img src="http://placehold.it/488x488" alt="">
+            </div>
+          </div>
+        </article>
+        
+        <article class="userContainer clearfix">
+          <div class="userInfos grid_4 alpha">
+            <a href=""><img src="img/userThumb.jpg" alt=""></a>
+            <h1 class="firstLine"><a href=""><strong>**********************</strong></a></h1><br>
+            <h2>idade — cidade</h2><br>
+            <h3>signo — ascendente</h3><br>
+          </div>
+          <ul class="userCompatibilities notUser grid_8 omega">
+            <li class="grid_2 alpha">
+              <label>amor</label>
+              <div class="progress">
+                <div class="bar" style="width: 60%;">60%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>
+            </li>
+            <li class="grid_2">
+              <label>sexo</label>
+              <div class="progress">
+                <div class="bar" style="width: 15%;">15%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+            <li class="grid_2">
+              <label>amizade</label>
+              <div class="progress">
+                <div class="bar" style="width: 15%;">15%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+            <li class="grid_2 omega">
+              <label>negócios</label>
+              <div class="progress">
+                <div class="bar" style="width: 45%;">45%</div>
+              </div>
+              <a href=""><i class="icon-plus-sign"></i><span>mais detalhes</span></a>            
+            </li>
+          </ul>
+          <div class="actions clearfix">
+            <ul class="grid_4 alpha">
+              <li>
+                <input type="checkbox">
+                <label>selecionar</label>
+              </li>
+              <li>
+                <input type="checkbox">
+                <label>bloquear</label>
+              </li>
+            </ul>
+            <ul class="grid_8 moreInfo omega">
+              <li>
+                <i class="icon-comment"></i>
+                <label><a href="">mensagens</a></label>
+              </li>
+              <li class="active">
+                <i class="icon-eye-close"></i>
+                <label><a href="">mapa natal</a></label>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>    
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+    
+  </body>
+</html>
