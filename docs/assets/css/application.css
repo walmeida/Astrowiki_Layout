@@ -6,7 +6,9 @@ a { color: #AAA; text-decoration: none; }
 p { margin: 0px; font-size: 12px; line-height: 16px; padding: 0px 4px; }
 label { font-size:13px; line-height:16px; margin:0px; }
 .firstLine, label { padding-top: 4px } 
-
+.none { display: none; }
+.opaLink {opacity: 0.3;}
+.opaLink:hover, .opaLink.active {opacity: 1;}
 
 #header { border-top: 2px solid #0088CC; margin-top: 32px; height: 206px;  }
   #header img { padding: 16px 4px 41px 4px}
@@ -48,36 +50,51 @@ label { font-size:13px; line-height:16px; margin:0px; }
     
 /* content */
 .userContainer { border-top: 1px solid #0088CC; padding: 15px 0px 0px; }
+  .userContainer i.icon-remove { position: absolute; top: 10px; right: 4px; }
+  .userContainer .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
   .userContainer a { color: #000; }
-  .userContainer .userInfos img { float: left; margin-right: 4px }
-  .userContainer .userInfos h1, .userContainer .userInfos h2, .userContainer .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; float: left; display: block;}
-    .userCompatibilities i { opacity: 0.3; margin-right: 4px; }
+  .userContainer .userInfos img { float: left; margin: 0px 4px }
+  .userContainer .userInfos h1, .userContainer .userInfos h2, .userContainer .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; }
+    .userCompatibilities i { margin-right: 4px; }
     .userCompatibilities span { opacity: 0; }
-    .userContainer .userCompatibilities li:hover i, .userContainer .userCompatibilities li:hover span { opacity: 1 }
-    
-  .userContainer .actions { float: left; padding: 7px 0px 12px; margin-top: 18px; border-top: 1px solid #CCC; }
-    .userContainer .actions input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
-    .userContainer .actions label { display: inline; float: left; margin-left: 4px }
-    .userContainer .actions i { display: inline; float: left; margin-top: 6px }
-    .userContainer .actions li { display: inline; float: left; margin-right: 16px }
-      .userContainer .actions .moreInfo li { opacity: 0.3; }
-      .userContainer .actions .moreInfo li:hover, .userContainer .actions .moreInfo li.active { opacity: 1; }
+      .userCompatibilities li:hover span { opacity: 1; }
+      .notUser .userCompatibilities .notUserNotification { display: block; }
+      .userCompatibilities .notUserNotification { display: none; left: -24px; height: 64px; width: 24px; position: absolute; top: 0px; z-index:2; }
+        .userCompatibilities .notUserNotification .alert-info { display: none; left: 24px; position: absolute; top: 0px; width: 437px; }
+        .userCompatibilities .notUserNotification i.icon-time { left: 0px; position: absolute; top: 24px; z-index:2; }
+        .userCompatibilities .notUserNotification:hover .alert-info { display: block; }
+        .userCompatibilities .notUserNotification button { margin-top: 8px; }
       
-  .userContainer .details { float: left; padding: 0px 0px 0px; margin: 18px 0px 6px; border-top: 1px solid #CCC; background-color: #F2F2F2; }
+    .userContainer .listHeader { background-color: #FFF; border-top: 0px; position: relative; }
+    .userContainer .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
+    
+  .userContainer .details { float: left; padding: 0px; margin: 18px 0px 6px; background-color: #F2F2F2; }
     .userContainer .details ul { border-bottom: 0px solid #CCC; }
-    .userContainer .details .listHeader { border-top: 0px; background-color: #FFF; }
-      .userContainer .details i { position: absolute; top: 6px; right: 4px; }
     .userContainer .details li { border-top: 1px solid #CCC; }
       .userContainer .details .finalScore { font-size: 24px; line-height: 26px; font-weight: bold; background-color: #FFF; }
-      .userContainer .details .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
       .userContainer .details li span { padding: 2px 4px 3px; float: left; }
       .userContainer .details li .description p { padding: 2px 30px 3px 4px; float: left; height: 16px; overflow: hidden; -moz-transition: all 0.3s ease-in-out 0.1s; -webkit-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s; }
       .userContainer .details li .description:hover p { float: left; height: auto; overflow: hidden; }
       .userContainer .details li .description i { opacity: 0.3; }
       .userContainer .details li .description:hover i { opacity: 1; }
-    .userContainer .actionsContainer { float: left; border-top: 1px solid #CCC; background-color: #F2F2F2; } 
-      .userContainer .actionsContainer { padding: 16px 0px; }
-        .userContainer .actionsContainer p { padding: 2px 4px; }
+      
+  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 18px 0px 16px; padding: 0px;  } 
+  
+    .userContainer .actionsMenu { float: left; padding: 5px 0px 12px; margin-top: 2px; }
+      .userContainer .actionsMenu input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
+      .userContainer .actionsMenu label { display: inline; float: left; margin-left: 4px }
+      .userContainer .actionsMenu i { display: inline; float: left; margin-top: 6px }
+      .userContainer .actionsMenu li { display: inline; float: left; margin-right: 16px }
+    .userContainer .messagesList {border-top: 1px dotted #CCC; float: left; width: 100%}
+      .userContainer .messagesList .userMessage {background-color:rgba(204,204,204,0.1);border-top: 1px solid rgba(204,204,204,.5); float: left; padding: 7px 0px; width: 100%}
+      .userContainer .messagesList .userMessage.unread {background-color:rgba(0,136,204,0.1);border-top: 1px solid rgba(0,136,204,0.5); }
+        .userContainer .messagesList .userMessage i.icon-remove {top:0px }
+        .userContainer .messagesList .userMessage .userInfos img {height: 38px}
+      
+      
+        
+    .userContainer .mapaNatal {border-top: 1px dotted #CCC; float: left; width: 100%} 
+        .userContainer .mapaNatal p { padding: 2px 4px; }
       
      
   
