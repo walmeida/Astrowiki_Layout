@@ -51,6 +51,15 @@ label { font-size:13px; line-height:16px; margin:0px; }
       .pagination a { line-height: 28px; }
     
 /* content */
+.inviteFriends { }
+  .inviteNotification .alert-info {opacity:.5; padding: 16px 124px; margin-bottom: 32px; }
+    .inviteNotification h4 {font-size: 32px; line-height: 32px; padding: 6px 0px 13px;}
+    .inviteNotification button {margin-top: 15px;}
+      .oneFriend {padding: 8px 0px;}
+      .oneFriend:hover {background-color: rgba(0,136,204,0.1);}
+        .oneFriend .avatar {margin: 0px 4px;}
+        
+
 .userContainer { border-top: 1px solid #0088CC; padding: 15px 0px 0px; }
   i.icon-remove { position: absolute; top: 10px; right: 4px; }
   .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
