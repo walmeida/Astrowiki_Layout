@@ -7,22 +7,24 @@ p { margin: 0px; font-size: 12px; line-height: 16px; padding: 0px 4px; }
 label { font-size:13px; line-height:16px; margin:0px; }
 .firstLine, label { padding-top: 4px } 
 .none { display: none; }
+.show { display: block; }
 .opaLink {opacity: 0.3;}
 .opaLink:hover, .opaLink.active {opacity: 1;}
 
-#header { border-top: 2px solid #0088CC; margin-top: 32px; height: 206px;  }
+#header { border-top: 2px solid #0088CC; margin-top: 32px; }
   #header img { padding: 16px 4px 41px 4px}
     #header img.avatar { padding: 0px; height: 24px; width: 24px; margin: 0px 4px; }
   #header p { float: right; text-align: right; display: inline; font-size: 14px; margin-top: 16px; }
     #header p a { color: #08C; }
   #header ul.nav-tabs { font-size: 14px; border-bottom: 2px solid #0088CC; margin-bottom: 32px; }
-    #header ul.nav-tabs li a { padding-right: 16px; padding-left: 16px; }
+  #header .nav { margin-bottom: 23px; }
+    #header ul.nav-tabs li a { padding-right: 15px; padding-left: 15px; }
       #header ul.nav-tabs li { margin-bottom: -2px; position: relative; }
     .nav-tabs > .active > a,
     .nav-tabs > .active > a:hover { color: #0088CC; cursor: default; background-color: #ffffff; border: 2px solid #0088CC; border-bottom-color: transparent; }
     .mainNav.nav-tabs > li > a.dropdown-toggle { padding-bottom: 5px; padding-top: 5px; }
       .mainNav.nav-tabs > li > a.dropdown-toggle .caret { margin-top: 8px }
-      .mainNav.nav-tabs > li > .badge { position: absolute; top: 2px; right: 0px; z-index: 2; }
+      .mainNav.nav-tabs > li > .badge { position: absolute; top: -4px; right: 8px; z-index: 2; }
         .badge { padding: 1px 4px 1px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
         .badge-important { background-color: rgba(255,0,0,0.95) }
     
@@ -50,11 +52,11 @@ label { font-size:13px; line-height:16px; margin:0px; }
     
 /* content */
 .userContainer { border-top: 1px solid #0088CC; padding: 15px 0px 0px; }
-  .userContainer i.icon-remove { position: absolute; top: 10px; right: 4px; }
-  .userContainer .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
-  .userContainer a { color: #000; }
-  .userContainer .userInfos img { float: left; margin: 0px 4px }
-  .userContainer .userInfos h1, .userContainer .userInfos h2, .userContainer .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; }
+  i.icon-remove { position: absolute; top: 10px; right: 4px; }
+  .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
+  .userContainer a, .messagesList a { color: #000; }
+  .userInfos img { float: left; margin: 0px 4px }
+  .userInfos h1, .userInfos h2, .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; }
     .userCompatibilities i { margin-right: 4px; }
     .userCompatibilities span { opacity: 0; }
       .userCompatibilities li:hover span { opacity: 1; }
@@ -65,10 +67,13 @@ label { font-size:13px; line-height:16px; margin:0px; }
         .userCompatibilities .notUserNotification:hover .alert-info { display: block; }
         .userCompatibilities .notUserNotification button { margin-top: 8px; }
       
-    .userContainer .listHeader { background-color: #FFF; border-top: 0px; position: relative; }
-    .userContainer .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
+    .listHeader { background-color: #FFF; border-top: 0px; position: relative; }
+    .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
+    .listHeader p { padding: 11px 4px 12px 4px; }
+      .listHeader p span { font-weight: bold }
     
-  .userContainer .details { float: left; padding: 0px; margin: 18px 0px 6px; background-color: #F2F2F2; }
+  .userContainer .details { display: none; float: left; padding: 0px; margin: 18px 0px 6px; background-color: #F2F2F2; }
+  .userContainer .details.show { display: block; }
     .userContainer .details ul { border-bottom: 0px solid #CCC; }
     .userContainer .details li { border-top: 1px solid #CCC; }
       .userContainer .details .finalScore { font-size: 24px; line-height: 26px; font-weight: bold; background-color: #FFF; }
@@ -77,23 +82,26 @@ label { font-size:13px; line-height:16px; margin:0px; }
       .userContainer .details li .description:hover p { float: left; height: auto; overflow: hidden; }
       .userContainer .details li .description i { opacity: 0.3; }
       .userContainer .details li .description:hover i { opacity: 1; }
-      
-  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 18px 0px 16px; padding: 0px;  } 
   
+  /* action container */
+  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 18px 0px 16px; padding: 0px;  } 
+    /* actions menu*/
     .userContainer .actionsMenu { float: left; padding: 5px 0px 12px; margin-top: 2px; }
       .userContainer .actionsMenu input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
       .userContainer .actionsMenu label { display: inline; float: left; margin-left: 4px }
       .userContainer .actionsMenu i { display: inline; float: left; margin-top: 6px }
       .userContainer .actionsMenu li { display: inline; float: left; margin-right: 16px }
-    .userContainer .messagesList {border-top: 1px dotted #CCC; float: left; width: 100%}
-      .userContainer .messagesList .userMessage {background-color:rgba(204,204,204,0.1);border-top: 1px solid rgba(204,204,204,.5); float: left; padding: 7px 0px; width: 100%}
-      .userContainer .messagesList .userMessage.unread {background-color:rgba(0,136,204,0.1);border-top: 1px solid rgba(0,136,204,0.5); }
-        .userContainer .messagesList .userMessage i.icon-remove {top:0px }
-        .userContainer .messagesList .userMessage .userInfos img {height: 38px}
-      
-      
-        
-    .userContainer .mapaNatal {border-top: 1px dotted #CCC; float: left; width: 100%} 
+    /* actions messages list e massagem list */
+    .messagesList {border-top: 1px dotted #CCC; float: left; width: 100%}
+    .userContainer .messagesList {display: none;}
+    .userContainer .messagesList.show {display: block;}
+      .messagesList .userMessage {background-color:rgba(204,204,204,0.1);border-top: 1px solid rgba(204,204,204,.5); float: left; padding: 9px 0px 8px; width: 100%}
+      .messagesList .userMessage.unread {background-color:rgba(0,136,204,0.1);border-top: 1px solid rgba(0,136,204,0.5); }
+        .messagesList .userMessage i.icon-remove {top:0px }
+        .messagesList .userMessage .userInfos img {height: 38px}
+    /* mapa natal */
+    .userContainer .mapaNatal {border-top: 1px dotted #CCC; display: none; float: left; width: 100%} 
+    .userContainer .mapaNatal.show {display: block;} 
         .userContainer .mapaNatal p { padding: 2px 4px; }
       
      
