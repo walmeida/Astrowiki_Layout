@@ -51,8 +51,17 @@ label { font-size:13px; line-height:16px; margin:0px; }
       .pagination a { line-height: 28px; }
     
 /* content */
+.plansList {}
+  .plansList h1 { font-size:32px; line-height:32px; color:#08C; padding: 6px 4px; }
+  .plansList h2 { font-size:16px; line-height:16px; color:#08C; padding: 10px 4px 0px; }
+    .plansList h2 span { color:#000; font-weight: normal; }
+  .plansList p { padding-top: 10px }
+  .plansList li { border-top: 1px solid #0088CC; float: left; height: 111px; }
+  .plansList li.plansHeader { border-top: 0px; }
+  
+  
 .inviteFriends { }
-  .inviteNotification .alert-info {opacity:.5; padding: 16px 124px; margin-bottom: 32px; }
+  .inviteNotification .alert-info {padding: 16px 124px; margin-bottom: 32px; }
     .inviteNotification h4 {font-size: 32px; line-height: 32px; padding: 6px 0px 13px;}
     .inviteNotification button {margin-top: 15px;}
       .oneFriend {padding: 8px 0px;}
