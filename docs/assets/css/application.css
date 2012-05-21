@@ -11,11 +11,12 @@ label { font-size:13px; line-height:16px; margin:0px; }
 .opaLink {opacity: 0.3;}
 .opaLink:hover, .opaLink.active {opacity: 1;}
 
-#header { border-top: 2px solid #0088CC; margin-top: 32px; }
+#header {  }
+  header .aboutMenu { font-size: 12px; text-align: right; border-bottom: 2px solid #0088CC; padding-top: 16px; }
+    header .aboutMenu a { color: #08C; }
   #header img { padding: 16px 4px 41px 4px}
     #header img.avatar { padding: 0px; height: 24px; width: 24px; margin: 0px 4px; }
-  #header p { float: right; text-align: right; display: inline; font-size: 14px; margin-top: 16px; }
-    #header p a { color: #08C; }
+  #header .btn.invite { float: right; margin: 18px 16px 0px 0px }
   #header ul.nav-tabs { font-size: 14px; border-bottom: 2px solid #0088CC; margin-bottom: 32px; }
   #header .nav { margin-bottom: 23px; }
     #header ul.nav-tabs li a { padding-right: 15px; padding-left: 15px; }
