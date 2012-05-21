@@ -1,15 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>loading</title>
-	<meta name="generator" content="TextMate http://macromates.com/">
-	<meta name="author" content="daniel sene">
-	<!-- Date: 2012-05-21 -->
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>astro afim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="nu[nudesign.com.br]">
 
-</body>
+    <!-- Le styles -->
+    <link href="docs/assets/css/reset.css" rel="stylesheet">
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="docs/assets/css/structure.css" rel="stylesheet">
+    <link href="docs/assets/css/application.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+    
+    <!-- script que liga e desliga do grid -->
+    <script type="text/javascript">
+    	function toggle_grid()
+    	{
+    		var grid = document.getElementById('grid');
+    		if ( grid.style.display == 'none' )
+    		{
+    			grid.style.display = 'block';
+    		}
+    		else
+    		{
+    			grid.style.display = 'none';
+    		}
+    	}
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- grid -->
+    <div class="over_grid" id="grid" style="display:block">&nbsp;</div>	
+    <div style="position: absolute; bottom: 10px; z-index: 2"><a href="javascript://" onclick="toggle_grid()">grid on / off</a></div>
+    
+    <div class="container_16">
+      
+      <header id="header" class="grid_12">
+        <a href="landingPage.html"><img src="img/astro_afim.png"></a>
+        <p>
+          <a href="">como funciona?</a><br>
+          <a href="">convide um amigo</a>
+        </p>
+        <ul class="nav nav-tabs mainNav">
+          <li>
+            <a href="">compatibilidade</a>
+          </li>
+          <li>
+            <a href="">meus selecionados</a>
+            <span class="badge badge-important">6</span>
+          </li>
+          <li>
+            <a href="">quem me selecionou</a>
+            <span class="badge badge-important">8</span>
+          </li>
+          <li>
+            <a href="messages.html">mensagens</a>
+            <span class="badge badge-important">4</span>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <img src="http://graph.facebook.com/767528212/picture" class="avatar">
+              minha conta
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="">configurações</a>
+              </li>
+              <li>
+                <a href="plansPage.html">meus créditos</a>
+              </li>
+              <li>
+                <a href="">meu mapa natal</a>
+              </li>
+              <li>
+                <a href="">pessoas bloqueadas</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="">logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header><!-- fecha header -->
+      
+      <section class="inviteFriends grid_12">
+        <div class="loadingNotification">
+          <h1>estamos medindo as compatibilidades...</h1>
+          <div class="progress progress-striped active">
+            <div class="bar" style="width: 10%;"></div>
+          </div>
+        </div>
+      </section>
+    </div>    
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="docs/assets/js/nu_application.js"></script>
+  </body>
 </html>

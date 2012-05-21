@@ -67,8 +67,9 @@ label { font-size:13px; line-height:16px; margin:0px; }
       .oneFriend {padding: 8px 0px;}
       .oneFriend:hover {background-color: rgba(0,136,204,0.1);}
         .oneFriend .avatar {margin: 0px 4px;}
-        
-
+  .loadingNotification { background-color: #F2F2F2; border-radius: 6px 6px 6px 6px; margin-bottom: 30px; padding: 60px; }
+    .loadingNotification h1 { padding-bottom: 30px; }
+    
 .userContainer { border-top: 1px solid #0088CC; padding: 15px 0px 0px; }
   i.icon-remove { position: absolute; top: 10px; right: 4px; }
   .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
