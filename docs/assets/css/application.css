@@ -62,6 +62,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
   
   
 .inviteFriends { }
+  .inviteFriends .friendsList img { height: 32px; width: 32px; }
   .inviteNotification .alert-info {padding: 16px 124px; margin-bottom: 32px; }
     .inviteNotification h4 {font-size: 32px; line-height: 32px; padding: 6px 0px 13px;}
     .inviteNotification button {margin-top: 15px;}
