@@ -71,16 +71,19 @@ label { font-size:13px; line-height:16px; margin:0px; }
   .loadingNotification { background-color: #F2F2F2; border-radius: 6px 6px 6px 6px; margin-bottom: 30px; padding: 60px; }
     .loadingNotification h1 { padding-bottom: 30px; }
     
-.userContainer { border-top: 1px solid #0088CC; padding: 15px 0px 0px; }
+.userContainer { border-top: 1px solid #0088CC; }
+  .userContainer .basicInfo { padding: 15px 0px 18px; float: left; }
+  .userContainer.newCompatibility .basicInfo {background-color:rgba(0,136,204,0.1); }
   i.icon-remove { position: absolute; top: 10px; right: 4px; }
   .description i.icon-plus-sign { position: absolute; top: 6px; right: 4px; }
   .userContainer a, .messagesList a { color: #000; }
   .userInfos img { float: left; margin: 0px 4px }
   .userInfos h1, .userInfos h2, .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; }
     .userInfos h1, .userInfos h3 {color:#08C;}
-    .notUser .userInfos h1, .userInfos h3 {color:#000;}
-    .notFriend .userInfos h1 {background-color:#F00;}
-      .userInfos h3 span {color:#666;}
+    .notUser .userInfos h1, .notUser .userInfos h3 {color:#000;}
+    .notFriend .userInfos a.btn { line-height: 16px; padding: 1px 5px }
+      .userInfos h3 span {color:#666; }
+      .notFriend .userInfos h3 span { display: none; }
     
     .userCompatibilities i { margin-right: 4px; }
     .userCompatibilities span { opacity: 0; }
@@ -97,7 +100,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
     .listHeader p { padding: 11px 4px 12px 4px; }
       .listHeader p span { font-weight: bold }
     
-  .userContainer .details { display: none; float: left; padding: 0px; margin: 18px 0px 6px; background-color: #F2F2F2; }
+  .userContainer .details { display: none; float: left; padding: 0px; margin: 18px 0px 14px; background-color: #F2F2F2; }
   .userContainer .details.show { display: block; }
     .userContainer .details ul { border-bottom: 0px solid #CCC; }
     .userContainer .details li { border-top: 1px solid #CCC; }
@@ -107,9 +110,10 @@ label { font-size:13px; line-height:16px; margin:0px; }
       .userContainer .details li .description:hover p { float: left; height: auto; overflow: hidden; }
       .userContainer .details li .description i { opacity: 0.3; }
       .userContainer .details li .description:hover i { opacity: 1; }
+      a.facebookShare {background:url('../../../img/glyphicons_390_facebook.png') no-repeat bottom left; float: left; font-size: 12px; font-weight: normal; line-height: 18px; padding: 8px 0px 2px 30px; }
   
   /* action container */
-  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 18px 0px 16px; padding: 0px;  } 
+  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 0px 0px 16px; padding: 0px;  } 
     /* actions menu*/
     .userContainer .actionsMenu { float: left; padding: 5px 0px 12px; margin-top: 2px; }
       .userContainer .actionsMenu input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
