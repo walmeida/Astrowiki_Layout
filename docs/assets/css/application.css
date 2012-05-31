@@ -84,7 +84,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
   .userInfos h1, .userInfos h2, .userInfos h3 {font-size: 12px; line-height: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px; }
     .userInfos h1, .userInfos h3 {color:#08C;}
     .notUser .userInfos h1, .notUser .userInfos h3 {color:#000;}
-    .notFriend .userInfos a.btn { line-height: 16px; padding: 1px 5px }
+    .notFriend .userInfos a.btn { line-height: 16px; padding: 1px 5px; }
       .userInfos h3 span {color:#666; }
       .notFriend .userInfos h3 span { display: none; }
     
@@ -98,7 +98,13 @@ label { font-size:13px; line-height:16px; margin:0px; }
         .userCompatibilities .notUserNotification i.icon-question-sign { left: 0px; position: absolute; top: 24px; z-index:2; }
         .userCompatibilities .notUserNotification:hover .alert-info { display: block; }
         .userCompatibilities .notUserNotification button { margin-top: 8px; }
-      
+          .userCompatibilities .userNotAvailable .progress { visibility: hidden; }
+          .userCompatibilities .userNotAvailable:hover .progress { visibility: visible; }
+          .userCompatibilities .userNotAvailable .bar { width: 0%; }
+          .userCompatibilities .youNotAvailable .btn { line-height: 12px; top: -1px; padding: 1px 5px; position: relative; text-align: left; visibility: hidden; width: 106px; }
+          .userCompatibilities .youNotAvailable i, .userCompatibilities .youNotAvailable span { display: none }
+          .userCompatibilities .youNotAvailable:hover .btn { visibility: visible; }
+        
     .listHeader { background-color: #FFF; border-top: 0px; position: relative; }
     .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
     .listHeader p { padding: 11px 4px 12px 4px; }
@@ -159,18 +165,19 @@ label { font-size:13px; line-height:16px; margin:0px; }
 .progress {
   height: 16px;
   margin-bottom: 0px;
-  background-color: #E6E6E6;
-  background-image: -moz-linear-gradient(top, #E5E5E5, #E9E9E9);
+  background-color: #E2E2E2;
+  background-image: -moz-linear-gradient(top, #E3E3E3, #E9E9E9);
   background-image: -ms-linear-gradient(top, #E5E5E5, #E9E9E9);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E5E5E5), to(#E9E9E9));
   background-image: -webkit-linear-gradient(top, #E5E5E5, #E9E9E9);
   background-image: -o-linear-gradient(top, #E5E5E5, #E9E9E9);
   background-image: linear-gradient(top, #E5E5E5, #E9E9E9);
-  background-color: .5;
+  background-color: 1;
 }
   .progress .bar {
     height: 16px;
     text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
     padding-left: 4px;
     background-color: rgba(14,144,210,1);
     background-image: -moz-linear-gradient(top, rgba(20,155,223,1), rgba(4,128,190,1));
@@ -179,6 +186,10 @@ label { font-size:13px; line-height:16px; margin:0px; }
     background-image: -o-linear-gradient(top, #149bdf, #0480be);
     background-image: linear-gradient(top, #149bdf, #0480be);
     background-image: -ms-linear-gradient(top, #149bdf, #0480be);
+  }
+  .notUser .progress .bar {
+    background-color: rgba(204,204,204,1);
+    background-image: none;
   }
   .notUser .progress .bar.high {
     background-color: rgba(204,204,204,1);
