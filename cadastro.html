@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>astro afim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="nu[nudesign.com.br]">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/reset.css" rel="stylesheet">
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="docs/assets/css/structure.css" rel="stylesheet">
+    <link href="docs/assets/css/application.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+
+    
+    <!-- script que liga e desliga do grid -->
+    <script type="text/javascript">
+      function toggle_grid()
+      {
+      var grid = document.getElementById('grid');
+      if ( grid.style.display == 'none' )
+      {
+      grid.style.display = 'block';
+      }
+      else
+      {
+      grid.style.display = 'none';
+      }
+      }
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- grid -->
+    <div class="over_grid" id="grid" style="display:block">&nbsp;</div>	
+    <div style="position: absolute; bottom: 10px; z-index: 2"><a href="javascript://" onclick="toggle_grid()">grid on / off</a></div>
+    
+    <div class="container_16">
+      
+      <header id="header" class="grid_12">
+        <div class="aboutMenu">
+          <a href="">como funciona</a> | 
+          <a href="">dúvids frequêntes</a> | 
+          <a href="">termos de uso</a>
+        </div>
+        <div class="">
+          <a href="landingPage.html"><img src="img/astro_afim.png"></a>
+          <a class="btn btn-primary invite" href="#">
+            <i class="icon-user icon-white"></i>
+            convide um amigo
+          </a>
+        </div>
+        <ul class="nav nav-tabs mainNav">
+          <li class="active">
+            <a href="">compatibilidade</a>
+          </li>
+          <li>
+            <a href="">meus selecionados</a>
+            <span class="badge badge-important">6</span>
+          </li>
+          <li>
+            <a href="">quem me selecionou</a>
+            <span class="badge badge-important">8</span>
+          </li>
+          <li>
+            <a href="messages.html">mensagens</a>
+            <span class="badge badge-important">4</span>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <img src="http://graph.facebook.com/767528212/picture" class="avatar">
+              minha conta
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="">configurações</a>
+              </li>
+              <li>
+                <a href="plansPage.html">meus créditos</a>
+              </li>
+              <li>
+                <a href="">meu mapa natal</a>
+              </li>
+              <li>
+                <a href="">pessoas bloqueadas</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="">logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="alert alert-info none">
+          <a class="close" data-dismiss="alert" href="#">×</a>
+          <h4 class="alert-heading">mensagem do admin</h4>
+          Compre créditos e envie mensagens para desconhecidos.
+        </div>  
+      </header><!-- fecha header -->
+
+
+
+	  <div id="conteudo" class="Cadastro grid_12">
+
+
+		<h1 class="span12">Cadastro</h1>
+
+		<form id="ctl0_Main_ctl1">
+
+		  <div class="span11 offset1">
+			<div class="row">
+			  <fieldset class="control-group span4 mandatory">
+				<label for="ctl0_Main_Nome" class="control-label" data-original-title="">Nome:</label>
+				<div class="controls">
+				  <div class="input-prepend">
+					<span class="add-on"><i class="icon-user"></i></span><input name="ctl0$Main$Nome" type="text" value="Pierre Andrews" id="ctl0_Main_Nome" class="textbox">
+				  </div>
+				  <span id="ctl0_Main_ctl3" class="alert alert-error  span2" style="display:none;color:red;">Digite o seu nome.</span>
+
+				  <span id="ctl0_Main_ctl4" class="alert alert-error  span2" style="display:none;color:red;">O nome deve conter apenas letras, traço, apostrofe e deve conter de 3 a 120 letras.</span>
+
+				</div>
+			  </fieldset>
+
+			  <fieldset class="control-group span4 mandatory">
+				<legend data-original-title="">Genero:</legend>
+				<div class="btn-group controls">
+				  <button type="button" class="btn active">
+					<span id="ctl0_Main_Masculino_parent" style="display:;"><input id="ctl0_Main_Masculino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Masculino" checked="checked" class="invisible"><label for="ctl0_Main_Masculino">Masculino</label></span>
+				  </button>
+				  <button type="button" class="btn">
+					<span id="ctl0_Main_Feminino_parent" style="display:;"><input id="ctl0_Main_Feminino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Feminino" class="invisible"><label for="ctl0_Main_Feminino">Feminino</label></span>
+				  </button>
+				</div>
+			  </fieldset>
+			</div>
+			
+			
+
+			<div class="row">
+			  <div class="span4 mandatory">
+				<div class="control-group">
+				  <label for="ctl0_Main_CidadeDeNascimento_CidadeNome" id="ctl0_Main_CidadeDeNascimento_Label" class="control-label" data-original-title="">Cidade de nascimento:</label>
+				  <div class="controls">
+					<div class="input-prepend">
+					  <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeDeNascimento$CidadeNome" type="text" value="Meyrin" id="ctl0_Main_CidadeDeNascimento_CidadeNome">
+					</div>
+					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Cidade" id="ctl0_Main_CidadeDeNascimento_Cidade" value="Meyrin">
+					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Pais" id="ctl0_Main_CidadeDeNascimento_Pais" value="Suíça">
+					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Estado" id="ctl0_Main_CidadeDeNascimento_Estado" value="">
+					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Latitude" id="ctl0_Main_CidadeDeNascimento_Latitude" value="46.228439">
+					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Longitude" id="ctl0_Main_CidadeDeNascimento_Longitude" value="6.07221">
+
+					<span id="ctl0_Main_CidadeDeNascimento_Validator" style="visibility:hidden;color:red;">Cidade inválida.</span>
+
+					<div id="ctl0_Main_CidadeDeNascimento_choices" class="location-choices control-group"><ul class="controls my-new-list"><li class="radio inline"><input type="radio" class="radio" id="455827" value="455827" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace" checked="true"><label for="455827">São Paulo, São Paulo, Brasil</label></li><li class="radio inline"><input type="radio" class="radio" id="20105181" value="20105181" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="20105181">São Paulo, Lisboa, Portugal</label></li><li class="radio inline"><input type="radio" class="radio" id="748328" value="748328" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="748328">São Paulo, Coimbra, Portugal</label></li><li class="radio inline"><input type="radio" class="radio" id="460852" value="460852" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="460852">Salinas, Maranhão, Brasil</label></li><li class="radio inline"><input type="radio" class="radio" id="456887" value="456887" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="456887">Caatiba, Bahia, Brasil</label></li></ul></div>
+				  </div>
+				</div>
+
+
+			  </div>
+
+			  <div class="span4 mandatory">
+				<div class="control-group error">
+				  <label for="ctl0_Main_CidadeEmQueVive_CidadeNome" id="ctl0_Main_CidadeEmQueVive_Label" class="control-label" data-original-title="">Cidade em que vive:</label>
+				  <div class="controls">
+					<div class="input-prepend">
+					  <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeEmQueVive$CidadeNome" type="text" value="São Paulo" id="ctl0_Main_CidadeEmQueVive_CidadeNome">
+					</div>
+					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Cidade" id="ctl0_Main_CidadeEmQueVive_Cidade" value="São Paulo">
+					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Pais" id="ctl0_Main_CidadeEmQueVive_Pais" value="Brasil">
+					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Estado" id="ctl0_Main_CidadeEmQueVive_Estado" value="SP">
+					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Latitude" id="ctl0_Main_CidadeEmQueVive_Latitude" value="-23.56288">
+					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Longitude" id="ctl0_Main_CidadeEmQueVive_Longitude" value="-46.654659">
+
+					<span id="ctl0_Main_CidadeEmQueVive_Validator" style="visibility:hidden;color:red;">Cidade inválida.</span>
+					<div id="ctl0_Main_CidadeEmQueVive_choices" class="location-choices control-group"><div class="span2 alert alert-error">Cidade obrigatória.</div></div>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+
+			
+			
+
+			<div class="row">
+			  <fieldset class="control-group span4 mandatory">
+				<label for="ctl0_Main_DataDeNascimento" class="control-label" data-original-title="">Data de nascimento <small>(dd/mm/aaaa)</small>:</label>
+				<div class="input-prepend">
+				  <span class="add-on"><i class="icon-calendar"></i></span><input name="ctl0$Main$DataDeNascimento" type="text" value="26/09/2001" id="ctl0_Main_DataDeNascimento" class="textbox">
+				</div>
+				<span id="ctl0_Main_ctl6" class="alert alert-error  span2" style="display:none;color:red;">Digite a data de nascimento.</span>
+
+				<span id="ctl0_Main_ctl7" class="alert alert-error  span2" style="display:none;color:red;">Entre a data de nascimento no formato dd/mm/aaaa.</span>
+
+				<span id="ctl0_Main_ctl8" class="alert alert-error  span2" style="display:none;color:red;">Data inválida.</span>
+
+			  </fieldset>
+
+			  <fieldset class="control-group span4" id="horario">
+				<label for="ctl0_Main_HorarioDeNascimento" class="control-label" data-original-title="">Horário de nascimento <small>(hh:mm)</small>: </label>
+				<div class="input-prepend" id="time">
+				  <span class="add-on"><i class="icon-time"></i></span><input name="ctl0$Main$HorarioDeNascimento" type="text" value="14:54" id="ctl0_Main_HorarioDeNascimento" class="textbox">
+				</div>
+				
+		  		<div class="controls" id="naosei">
+				  <span class="checkbox inline" id="ctl0_Main_NaoSeiHorarioNascimento_parent"><input id="ctl0_Main_NaoSeiHorarioNascimento" type="checkbox" name="ctl0$Main$NaoSeiHorarioNascimento"><label for="ctl0_Main_NaoSeiHorarioNascimento">Não sei o horário de nascimento</label></span>
+				</div>
+
+				<span id="ctl0_Main_ctl10" class="alert alert-error  span2" style="display:none;color:red;">Entre a hora de nascimento no formato hh:mm.</span>
+
+				<span id="ctl0_Main_ctl11" class="alert alert-error  span2" style="display:none;color:red;">Digite a hora de nascimento.</span>
+				<span id="ctl0_Main_ctl12" class="alert alert-error  span2" style="display:none;color:red;">Hora inválida.</span>
+			  </fieldset>
+			  
+			  <div class="offset4 span4" id="hv" style="display: block; ">
+				<span id="ctl0_Main_nasceuDuranteHV" class="control-label">Nasceu durante o horário de verão?</span>
+				<div class="controls">
+				  <div class="btn-group">
+					<button type="button" class="btn active">
+					  <span id="ctl0_Main_HorarioDeVerao1_parent" style="display:;"><input id="ctl0_Main_HorarioDeVerao1" type="radio" name="ctl0$Main$HV" value="ctl0$Main$HorarioDeVerao1" checked="checked" class="invisible"><label for="ctl0_Main_HorarioDeVerao1">Sim</label></span>
+					</button>
+					<button type="button" class="btn">
+					  <span id="ctl0_Main_HorarioDeVerao2_parent" style="display:;"><input id="ctl0_Main_HorarioDeVerao2" type="radio" name="ctl0$Main$HV" value="ctl0$Main$HorarioDeVerao2" class="invisible"><label for="ctl0_Main_HorarioDeVerao2">Não</label></span>
+					</button>
+				  </div>
+				</div>
+
+				<div class="modal alert-error hide fade in" id="horarioModal">
+				  <div class="modal-header">
+					<button class="close" data-dismiss="modal">×</button>
+					<h3>Atenção:</h3>
+				  </div>
+				  <div class="modal-body">
+					<p>sem o horário de nascimento, não é possível calcular com precisão a compatibilidade de alguns planetas. Dessa forma, as compatibilidades serão calculadas, mas de maneira incompleta. Para achar o seu horário de nascimento, procure-o em sua certidão de nascimento.</p>
+				  </div>
+				  <div class="modal-footer">
+					<a href="#" class="btn btn-primary" data-dismiss="modal">Ok</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+
+			
+			
+			
+			
+
+
+			
+			<div class="row">
+			  <fieldset class="control-group mandatory error">
+				<div class="controls span4">
+				  <label for="ctl0_Main_Email" class="control-label" data-original-title="">Email:</label>
+				  <div class="input-prepend">
+					<span class="add-on">@</span><input name="ctl0$Main$Email" type="text" value="pierre.andrews@gmail.com" id="ctl0_Main_Email" class="textbox">
+				  </div>
+				  <span id="ctl0_Main_ctl15" class="alert alert-error  span2">Entre com o seu e-mail.</span>
+				  <span id="ctl0_Main_ctl16" class="alert alert-error span2">Entre com um e-mail válido.</span>
+				</div>
+				<div class="controls span4 checkbox inline" id="email-update">
+				  <span class="checkbox" id="ctl0_Main_NovasCompatibilidades_parent"><input id="ctl0_Main_NovasCompatibilidades" type="checkbox" name="ctl0$Main$NovasCompatibilidades" checked="checked"><label for="ctl0_Main_NovasCompatibilidades">Desejo receber mensagens do Astrowiki informando-me sobre novas compatibilidades</label></span>
+				</div>
+			  </fieldset>
+			</div>
+
+			
+
+			<div class="row">
+			  <fieldset class="control-group row span4 offset2 mandatory">
+				<legend data-original-title="">Disponível para:</legend>
+				<fieldset>
+				  <legend class="control-label">Mulheres:</legend>
+				  <div class="controls">
+					<div class="btn-group">
+					  <button type="button" class="btn active">
+						<span id="ctl0_Main_DisponivelAmorMulheres_parent"><input id="ctl0_Main_DisponivelAmorMulheres" type="checkbox" name="ctl0$Main$DisponivelAmorMulheres" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmorMulheres">Amor</label></span>
+					  </button>
+					  <button type="button" class="btn over18" style="display: block; ">
+						<span id="ctl0_Main_DisponivelSexoMulheres_parent" style=""><input id="ctl0_Main_DisponivelSexoMulheres" type="checkbox" name="ctl0$Main$DisponivelSexoMulheres" class="invisible"><label for="ctl0_Main_DisponivelSexoMulheres">Sexo</label></span>
+					  </button>
+					  <button type="button" class="btn active">
+						<span id="ctl0_Main_DisponivelAmizadeMulheres_parent"><input id="ctl0_Main_DisponivelAmizadeMulheres" type="checkbox" name="ctl0$Main$DisponivelAmizadeMulheres" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmizadeMulheres">Amizade</label></span>
+					  </button>
+					  <button type="button" class="btn over18" style="display: block; ">
+						<span id="ctl0_Main_DisponivelNegociosMulheres_parent" style=""><input id="ctl0_Main_DisponivelNegociosMulheres" type="checkbox" name="ctl0$Main$DisponivelNegociosMulheres" class="invisible"><label for="ctl0_Main_DisponivelNegociosMulheres">Negócios</label></span>
+					  </button>
+					</div>
+				  </div>
+				</fieldset>
+
+				<fieldset>
+				  <legend class="control-label">Homens:</legend>
+				  <div class="controls">
+					<div class="btn-group">
+					  <button type="button" class="btn">
+						<span id="ctl0_Main_DisponivelAmorHomens_parent"><input id="ctl0_Main_DisponivelAmorHomens" type="checkbox" name="ctl0$Main$DisponivelAmorHomens" class="invisible"><label for="ctl0_Main_DisponivelAmorHomens">Amor</label></span>
+					  </button>
+					  <button type="button" class="btn over18" style="display: block; ">
+						<span id="ctl0_Main_DisponivelSexoHomens_parent" style=""><input id="ctl0_Main_DisponivelSexoHomens" type="checkbox" name="ctl0$Main$DisponivelSexoHomens" class="invisible"><label for="ctl0_Main_DisponivelSexoHomens">Sexo</label></span>
+					  </button>
+					  <button type="button" class="btn active">
+						<span id="ctl0_Main_DisponivelAmizadeHomens_parent"><input id="ctl0_Main_DisponivelAmizadeHomens" type="checkbox" name="ctl0$Main$DisponivelAmizadeHomens" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmizadeHomens">Amizade</label></span>
+					  </button>
+					  <button type="button" class="btn over18" style="display: block; ">
+						<span id="ctl0_Main_DisponivelNegociosHomens_parent" style=""><input id="ctl0_Main_DisponivelNegociosHomens" type="checkbox" name="ctl0$Main$DisponivelNegociosHomens" class="invisible"><label for="ctl0_Main_DisponivelNegociosHomens">Negócios</label></span>
+					  </button>
+					</div>
+				  </div>
+				</fieldset>
+				<span id="ctl0_Main_ctl17" class="alert alert-error  span2" style="display:none;color:red;">Você deve estar disponível pelo menos para uma categoria.</span>
+			  </fieldset>
+
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="form-actions">
+			  <div class="span4 offset4">
+				<input type="submit" name="ctl0$Main$Confirma" value="Confirma" id="ctl0_Main_Confirma" class="btn btn-primary">
+			  </div>
+			</div>
+		  </div>
+		</form>
+
+
+
+	  </div>      
+    </div>    
+    
+    <!-- Le javascript
+		 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="docs/assets/js/nu_application.js"></script>
+
+<!-- Note that we do not have access to the code of all the input field and form tag because they are build automatically by the PHP framework. We thus need to use javascript to add decoration and popovers. -->
+
+<script type="text/javascript">
+  function horarioModal() {
+  jQuery('#horarioModal').modal('show');
+  }
+
+	jQuery(function() {
+
+	jQuery('form div.btn-group input[type=radio], form div.btn-group input[type=checkbox]').addClass('invisible');
+
+	jQuery('form div.btn-group input[type=radio], form div.btn-group input[type=checkbox]').closest('button.btn').click(function() {
+	var inp = jQuery(this).find('input')
+	if(inp.attr('type') == 'radio') {
+	jQuery("input[name='"+inp.attr('name')+"']").attr('checked', false).closest('button.btn').removeClass('active');
+	}
+	if(inp.is(':checked')) {
+	jQuery(this).removeClass('active');
+} else {
+	jQuery(this).addClass('active');
+}
+	inp.attr('checked', !inp.is(':checked'))
+	return false;
+	});
+
+	jQuery('form div.btn-group input[type=radio]:checked, form div.btn-group input[type=checkbox]:checked').each(function(el) {
+	jQuery(this).closest('button.btn').button('toggle');
+	}
+	);
+
+	jQuery('#horarioModal').modal({show:false})
+	jQuery('#naosei input').change(function() {
+	if(jQuery(this).is(':checked')) {
+	horarioModal();
+	}
+	});
+	jQuery('#time input').change(function() {
+	if(!jQuery(this).val() || jQuery(this).val().length == 0) {
+	jQuery('#naosei input').attr('checked', 'true');
+	horarioModal()}
+	});
+
+	jQuery('.mandatory label.control-label, .mandatory legend').not('fieldset fieldset legend').prepend('<i class="label-icon icon-edit"></i>').tooltip({title: "obrigatório", placement: "left"});
+
+	jQuery('#horario > label').prepend('<i class="label-icon icon-info-sign"></i>').popover({content: 'test', title:'Aviso:', template:'<div class="popover-warning popover fade in"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"> Aviso: </h3><div class="popover-content">A ausência do horário de nascimento diminui a precisão das compatibilidades astrológicas.</div></div></div>', placement:'top'});
+
+
+	});
+  </script>
+
+
+  </body>
+</html>
