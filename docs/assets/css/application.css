@@ -108,7 +108,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
     
   .userContainer .details { display: none; float: left; padding: 0px; margin: 18px 0px 14px; background-color: #F2F2F2; }
   .userContainer .details.show { display: block; }
-    .userContainer .details ul { border-bottom: 0px solid #CCC; }
+    .userContainer .details ul { border-bottom: 1px solid #CCC; }
     .userContainer .details li { border-top: 1px solid #CCC; }
       .userContainer .details .finalScore { font-size: 24px; line-height: 26px; font-weight: bold; background-color: #FFF; }
       .userContainer .details li span { padding: 2px 4px 3px; float: left; }
