@@ -12,14 +12,13 @@ label { font-size:13px; line-height:16px; margin:0px; }
 .opaLink:hover, .opaLink.active {opacity: 1;}
 
 #header {  }
-  header .aboutMenu { border-bottom: 1px solid #0088CC; color: #08C; font-size: 12px; padding-top: 16px; text-align: right; }
+  header .aboutMenu { border-bottom: 1px solid #0088CC; color: #08C; font-size: 12px; margin-bottom: 1px; padding-top: 16px; text-align: right; }
     header .aboutMenu a { color: #08C; padding: 0px 4px; }
     header .aboutMenu .barbaraLink { text-align: left; float: left; }
   #header img { padding: 16px 4px 41px 4px}
     #header img.avatar { padding: 0px; height: 24px; width: 24px; margin: 0px 4px; }
   #header .btn.invite { float: right; margin: 18px 16px 0px 0px }
   #header ul.nav-tabs { font-size: 14px; border-bottom: 2px solid #0088CC; margin-bottom: 32px; }
-  #header .nav { margin-bottom: 23px; }
     #header ul.nav-tabs li a { padding-right: 15px; padding-left: 15px; }
       #header ul.nav-tabs li { margin-bottom: -2px; position: relative; }
     .nav-tabs > .active > a,
@@ -30,6 +29,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
         .badge { padding: 1px 4px 1px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
         .badge-important { background-color: rgba(255,0,0,0.95) }
     
+    .filtersContainer { margin-bottom: 7px; }
     .filtersContainer li.userSearch { width: 116px; -moz-transition: all 0.3s ease-in-out 0.1s; -webkit-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s; }
     .filtersContainer li.userSearch:hover { width: 240px; }
       .filtersContainer li.userSearch:hover input[type="text"] { width: 230px; }
@@ -48,12 +48,9 @@ label { font-size:13px; line-height:16px; margin:0px; }
         .filtersContent li { padding: 2px 10px; }
         .filtersContent li.divider { background-color: #999; border-bottom: 1px solid #FFFFFF; height: 1px; margin: 8px 0px; overflow: hidden; padding:0; width:100% }    
     .nav-pills li.paginationContainer {float: right}
-    
     .newCompatibilityNot { color: #08C; line-height: 16px; padding: 4px 4px 0px 4px;  }
-     
-    .pagination { margin: 2px 0px; }
-      .pagination a { line-height: 28px; }
-    
+    .breadcrumb { margin-bottom: 32px; padding: 6px; }
+   
 /* content */
 .plansList {}
   .plansList h1 { font-size:32px; line-height:32px; color:#08C; padding: 6px 4px; }
