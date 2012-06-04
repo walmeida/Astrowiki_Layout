@@ -12,8 +12,9 @@ label { font-size:13px; line-height:16px; margin:0px; }
 .opaLink:hover, .opaLink.active {opacity: 1;}
 
 #header {  }
-  header .aboutMenu { font-size: 12px; text-align: right; border-bottom: 2px solid #0088CC; padding-top: 16px; }
-    header .aboutMenu a { color: #08C; }
+  header .aboutMenu { border-bottom: 2px solid #0088CC; color: #08C; font-size: 12px; padding-top: 16px; text-align: right; }
+    header .aboutMenu a { color: #08C; padding: 0px 4px; }
+    header .aboutMenu .barbaraLink { text-align: left; float: left; }
   #header img { padding: 16px 4px 41px 4px}
     #header img.avatar { padding: 0px; height: 24px; width: 24px; margin: 0px 4px; }
   #header .btn.invite { float: right; margin: 18px 16px 0px 0px }
@@ -177,7 +178,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
   background-image: none;
   border-top: 1px solid #CCC;
   border-right: 1px solid #CCC;
-  border-bottom: 0px solid #CCC;
+  border-bottom: 0aboutMenupx solid #CCC;
   border-left: 1px solid #CCC;
 }
   .progress .bar {
