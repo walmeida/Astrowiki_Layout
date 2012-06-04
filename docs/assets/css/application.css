@@ -316,20 +316,13 @@ background-color: #FBEED5;
 .popover-warning .popover-inner {
     background: #C09853;
 }
-​
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+.userInfos h3 span.ascendente {color:#08C;}
+
+.userInfos h1.firstLine a { color: inherit;}
+
+.popover-emph { display: block; color: #08C; margin-top: 5px;}
+
+.popover-content p { text-align: justify; }
+
+#comet { display: none; }
