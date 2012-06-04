@@ -221,9 +221,91 @@ label { font-size:13px; line-height:16px; margin:0px; }
       background-image: linear-gradient(top, rgba(20,155,223,0.5), rgba(4,128,190,0.5));
       background-image: -ms-linear-gradient(top, rgba(20,155,223,0.5), rgba(4,128,190,0.5));
     }
+
+#conteudo.Cadastro form {
+width: 940px;
+float: left;
+margin-left: 20px;
+ }
   
-  
-  
+#conteudo.Cadastro form div.btn-group input[type=radio].invisible,
+#conteudo.Cadastro form div.btn-group input[type=checkbox].invisible {
+  display:    block;
+  position:   absolute;
+  top:        0;
+  left:       0;
+  width:      100%;
+  height:     100%;
+  opacity:    0;
+}
+
+#conteudo.Cadastro form div.location-choices li.radio.inline {
+  margin-left: 10px;
+ }
+
+#conteudo.Cadastro form label.control-label,
+#conteudo.Cadastro form legend {
+display: block;
+width: 100%;
+padding: 0;
+margin-bottom: 15px;
+font-size: 19.5px;
+line-height: 36px;
+color: #AAA;
+border: 0;
+border-bottom: 1px solid #EEE;
+ }
+
+#conteudo.Cadastro form #email-update {
+  margin-top: 48px;
+}
+
+#conteudo.Cadastro form fieldset fieldset legend {
+  border: 0;
+  font-size: 16px;
+}
+
+#conteudo.Cadastro form label small {
+font-size: 70%;
+ }
+
+#conteudo.Cadastro form > div > .row {
+  margin-top: 40px;
+ }
+
+#conteudo.Cadastro form  .control-label > .label-icon,
+#conteudo.Cadastro form  legend > .label-icon {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#conteudo.Cadastro form .mandatory .control-label ,
+#conteudo.Cadastro form .mandatory legend {
+color: #333;
+}
+
+legend + div.btn-group.controls, legend + fieldset  {
+  margin-top: 15px;
+ }
+
+.popover-warning .popover-content {
+color: #C09853;
+background-color: #FCF8E3;
+border-color:         #FBEED5;
+}
+.popover-warning .popover-title {
+color: #C09853;
+background-color: #FBEED5;
+}
+
+.popover-warning.top .arrow  {
+    border-top: 5px solid #C09853;
+}
+.popover-warning .popover-inner {
+    background: #C09853;
+}
+​
+
   
   
   
