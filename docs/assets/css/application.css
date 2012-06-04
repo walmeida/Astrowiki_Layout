@@ -4,7 +4,7 @@ body { font-family: helvetica, arial, sans-serif; font-size: 12px; line-height: 
 ul { list-style: none; margin: 0px; }
 a { color: #AAA; text-decoration: none; }
 p { margin: 0px; font-size: 12px; line-height: 16px; padding: 0px 4px; }
-label { font-size:13px; line-height:16px; margin:0px; }
+label { font-size: 12px; line-height:16px; margin:0px; }
 .firstLine, label { padding-top: 4px } 
 .none { display: none; }
 .show { display: block; }
@@ -119,12 +119,14 @@ label { font-size:13px; line-height:16px; margin:0px; }
       a.facebookShare {background:url('../../../img/glyphicons_390_facebook.png') no-repeat bottom left; float: left; font-size: 12px; font-weight: normal; line-height: 18px; padding: 8px 0px 2px 30px; }
   
   /* action container */
-  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; margin: 0px 0px 16px; padding: 0px;  } 
+  .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; font-size: 12px;margin: 0px 0px 16px; padding: 0px;  } 
     /* actions menu*/
     .userContainer .actionsMenu { float: left; padding: 5px 0px 12px; margin-top: 2px; }
       .userContainer .actionsMenu input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
       .userContainer .actionsMenu label { display: inline; float: left; margin-left: 4px }
       .userContainer .actionsMenu i { display: inline; float: left; margin-top: 6px }
+      .userContainer .actionsMenu .btn { padding: 0px 4px; } 
+        .userContainer .actionsMenu .btn i { margin: 2px 4px 0px 0px; }
       .userContainer .actionsMenu li { display: inline; float: left; margin-right: 16px }
     /* actions messages list e massagem list */
     .messagesList {border-top: 1px dotted #CCC; float: left; width: 100%}
