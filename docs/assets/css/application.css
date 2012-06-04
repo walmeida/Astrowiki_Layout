@@ -90,20 +90,18 @@ label { font-size:13px; line-height:16px; margin:0px; }
     
     .userCompatibilities i { margin-right: 4px; }
     .userCompatibilities span { opacity: 0; }
-      .userCompatibilities li { opacity: 0.3; }
-      .userCompatibilities li:hover, .userCompatibilities li.orderedBy, .userCompatibilities li:hover span { opacity: 1; }
+      .userCompatibilities.detailed li { opacity: 0.3; }
+      .userCompatibilities li:hover, .userCompatibilities li.selected, .userCompatibilities li:hover span { opacity: 1; }
+      
       .notUser .userCompatibilities .notUserNotification { display: block; }
       .userCompatibilities .notUserNotification { display: none; left: -24px; height: 64px; width: 24px; position: absolute; top: 0px; z-index:2; }
         .userCompatibilities .notUserNotification .alert-info { display: none; left: 24px; position: absolute; top: 0px; width: 437px; }
         .userCompatibilities .notUserNotification i.icon-question-sign { left: 0px; position: absolute; top: 24px; z-index:2; }
         .userCompatibilities .notUserNotification:hover .alert-info { display: block; }
         .userCompatibilities .notUserNotification button { margin-top: 8px; }
-          .userCompatibilities .userNotAvailable .progress { visibility: hidden; }
-          .userCompatibilities .userNotAvailable:hover .progress { visibility: visible; }
-          .userCompatibilities .userNotAvailable .bar { width: 0%; }
-          .userCompatibilities .youNotAvailable .btn { line-height: 12px; top: -1px; padding: 1px 5px; position: relative; text-align: left; visibility: hidden; width: 106px; }
+          .userCompatibilities .userNotAvailable .bar { width: 100%; }
+          .userCompatibilities .youNotAvailable .btn { line-height: 12px; top: -1px; padding: 1px 5px; position: relative; text-align: left; width: 106px; }
           .userCompatibilities .youNotAvailable i, .userCompatibilities .youNotAvailable span { display: none }
-          .userCompatibilities .youNotAvailable:hover .btn { visibility: visible; }
         
     .listHeader { background-color: #FFF; border-top: 0px; position: relative; }
     .listHeader label { font-weight: bold; padding: 11px 4px 12px 4px; }
@@ -174,6 +172,14 @@ label { font-size:13px; line-height:16px; margin:0px; }
   background-image: linear-gradient(top, #E5E5E5, #E9E9E9);
   background-color: 1;
 }
+.userNotAvailable .progress {
+  background-color: #FFFFFF;
+  background-image: none;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 0px solid #CCC;
+  border-left: 1px solid #CCC;
+}
   .progress .bar {
     height: 16px;
     text-align: left;
@@ -188,9 +194,15 @@ label { font-size:13px; line-height:16px; margin:0px; }
     background-image: -ms-linear-gradient(top, #149bdf, #0480be);
   }
   .notUser .progress .bar {
-    background-color: rgba(204,204,204,1);
-    background-image: none;
-  }
+      background-color: rgba(204,204,204,1);
+      background-image: none;
+    }
+  .notUser .userNotAvailable .progress .bar {
+      background-color: rgba(255,255,255,1);
+      background-image: none;
+      color:#CCC;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    }
   .notUser .progress .bar.high {
     background-color: rgba(204,204,204,1);
     background-image: none;
@@ -291,7 +303,7 @@ legend + div.btn-group.controls, legend + fieldset  {
 .popover-warning .popover-content {
 color: #C09853;
 background-color: #FCF8E3;
-border-color:         #FBEED5;
+border-color: #FBEED5;
 }
 .popover-warning .popover-title {
 color: #C09853;
