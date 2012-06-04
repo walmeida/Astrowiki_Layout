@@ -90,7 +90,7 @@ label { font-size:13px; line-height:16px; margin:0px; }
     
     .userCompatibilities i { margin-right: 4px; }
     .userCompatibilities span { opacity: 0; }
-      .userCompatibilities li { opacity: 1; }
+      .userCompatibilities li { opacity: 0.3; }
       .userCompatibilities li:hover, .userCompatibilities li.orderedBy, .userCompatibilities li:hover span { opacity: 1; }
       .notUser .userCompatibilities .notUserNotification { display: block; }
       .userCompatibilities .notUserNotification { display: none; left: -24px; height: 64px; width: 24px; position: absolute; top: 0px; z-index:2; }
