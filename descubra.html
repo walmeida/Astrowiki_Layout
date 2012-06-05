@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>astro afim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="nu[nudesign.com.br]">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/reset.css" rel="stylesheet">
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="docs/assets/css/structure.css" rel="stylesheet">
+    <link href="docs/assets/css/application.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+
+    
+    <!-- script que liga e desliga do grid -->
+    <script type="text/javascript">
+      function toggle_grid()
+      {
+      var grid = document.getElementById('grid');
+      if ( grid.style.display == 'none' )
+      {
+      grid.style.display = 'block';
+      }
+      else
+      {
+      grid.style.display = 'none';
+      }
+      }
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- grid -->
+    <div class="over_grid" id="grid" style="display:block">&nbsp;</div>	
+
+<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+
+  <div class="modal hide fade in buyModal" id="myModal">
+	<div class="modal-header">
+	  <button class="close" data-dismiss="modal">×</button>
+	  <h3>
+	  <div class="userInfosalpha">
+        <div class="userLogo grid_1 alpha">
+          <img src="https://graph.facebook.com/100003214385461/picture?small" alt="">
+        </div>
+        <div class="details">
+		  <strong>Descubra o nome</strong>
+		  <div>38 — São Paulo</div>
+          <div  class="libra signo">Libra</div>
+        </div>
+      </div>
+	  </h3>
+	</div>
+	<div class="modal-body">
+	  <!-- displayed if the user has enough credits, in the first step -->
+	  <p>Essa ação vai custar R$ <span class="buyValue">1</span>. Você tem R$ <span class="saldo">10</span>.</p>
+
+	  <!-- displayed if something went wrong with the server -->
+	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+	  <p class="alert alert-error">Alguma coisa deu errado. Por favor, recarregue a página.</p>
+
+	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+	  <!-- displayed if the user doesn't have enough credits -->
+	  <p class="alert alert-warning">Essa ação vai custar R$ <span class="buyValue"></span> credits. Você tem somente R$ <span class="saldo">0</span> créditos disponíveis. Clique abaixo para adquirir créditos.</p>
+
+	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+	  <!-- displayed when the operation is completed -->
+	  <div class="done">
+		<p class="alert alert-info">O nome do usuário foi liberado: <span class="nome">Pierre Andrews</span>.</p>
+		<p>Créditos que sobraram: R$ <span class="saldo">3</span>.</p>
+		<p>Quer adicionar o usuário à lista de selecionados para poder encontrá-lo com facilidade?</p>
+	  </div>
+
+	</div>
+	<div class="modal-footer">
+	  <!-- cancel button -->
+	  <a class="btn" data-dismiss="modal">Agora Não</a>
+	  <!-- button displayed if the user doesn't have enought credits -->
+	  <a href="#" class="btn btn-warning">Adquirir Créditos</a>
+	  <!-- button to buy the name in the first step and to select the user in the second -->
+	  <a class="btn btn-primary buyBtn">Ok</a>
+	</div>
+  </div>
+
+    <!-- Le javascript
+		 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="docs/assets/js/nu_application.js"></script>
+
+</body>
+</html>
