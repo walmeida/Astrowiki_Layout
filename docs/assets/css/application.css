@@ -30,10 +30,10 @@ label { font-size: 12px; line-height:16px; margin:0px; }
         .badge-important { background-color: rgba(255,0,0,0.95) }
     
     .filtersContainer { margin-bottom: 7px; }
-    .filtersContainer li.userSearch { width: 116px; -moz-transition: all 0.3s ease-in-out 0.1s; -webkit-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s; }
+    .filtersContainer li.userSearch { width: 160px; -moz-transition: all 0.3s ease-in-out 0.1s; -webkit-transition: all 0.3s ease-in-out 0.1s; transition: all 0.3s ease-in-out 0.1s; }
     .filtersContainer li.userSearch:hover { width: 240px; }
       .filtersContainer li.userSearch:hover input[type="text"] { width: 230px; }
-      .filtersContainer .userSearch input[type="text"] { margin-top: 2px; height: 20px; width: 106px; background: url('../../../img/searchIcon.png') no-repeat right center #FFF; color: #CCC; }
+      .filtersContainer .userSearch input[type="text"] { margin-top: 2px; height: 20px; width: 150px; background: url('../../../img/searchIcon.png') no-repeat right center #FFF;}
     .filtersContainer .caret { float: right; }
     .filtersContainer.nav-pills > li > a { background-color: #F2F2F2; }
       .filtersContainer.nav-pills > li:hover > a { color: #000; }
@@ -197,7 +197,7 @@ label { font-size: 12px; line-height:16px; margin:0px; }
       background-color: rgba(204,204,204,1);
       background-image: none;
     }
-  .notUser .userNotAvailable .progress .bar {
+  .userNotAvailable .progress .bar {
       background-color: rgba(255,255,255,1);
       background-image: none;
       color:#CCC;
@@ -233,6 +233,14 @@ label { font-size: 12px; line-height:16px; margin:0px; }
       background-image: linear-gradient(top, rgba(20,155,223,0.5), rgba(4,128,190,0.5));
       background-image: -ms-linear-gradient(top, rgba(20,155,223,0.5), rgba(4,128,190,0.5));
     }
+
+.userContainer .details li div.planetas span {display:block; background: url('../../../img/sprite_ligacoes.png') no-repeat;height:15px;text-indent: -9999em;width:14px;padding: 0;margin-top: 2px;}
+.userContainer .details li div.planetas span.oposicao {background-position: 1px 3px;}
+.userContainer .details li div.planetas span.sextil {background-position: 0 -13px}
+.userContainer .details li div.planetas span.trigono {background-position: 0 -28px}
+.userContainer .details li div.planetas span.conjuncao {background-position: 0 -46px;height: 16px;}
+.userContainer .details li div.planetas span.quadratura {background-position: 0 -61px}
+
 
 #conteudo.Cadastro form {
 width: 940px;
@@ -326,3 +334,17 @@ background-color: #FBEED5;
 .popover-content p { text-align: justify; }
 
 #comet { display: none; }
+
+.modal.buyModal .modal-header {
+  height: 70px;
+}
+
+.modal.buyModal .modal-header .details div {
+  font-size: 15px;
+}
+
+
+.modal.buyModal .modal-header .userLogo {
+  margin-top: 10px;
+ }
+
