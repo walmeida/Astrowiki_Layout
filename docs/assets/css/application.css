@@ -251,17 +251,9 @@ label { font-size: 12px; line-height:16px; margin:0px; }
         #email-update { margin-top: 28px; }
     
 #conteudo.Cadastro form div.btn-group input[type=radio].invisible,
-#conteudo.Cadastro form div.btn-group input[type=checkbox].invisible {
-  display:    block;
-  position:   absolute;
-  top:        0;
-  left:       0;
-  width:      100%;
-  height:     100%;
-  opacity:    0;
-}
+#conteudo.Cadastro form div.btn-group input[type=checkbox].invisible {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;  opacity: 0; }
 
-#conteudo.Cadastro form label small { font-size: 70%; }
+#conteudo.Cadastro form legend small { color: #333; font-size: 70%; }
 #conteudo.Cadastro .control-label .label-icon, #conteudo.Cadastro legend .label-icon { margin-right: 5px; }
 
 
