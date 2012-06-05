@@ -241,13 +241,15 @@ label { font-size: 12px; line-height:16px; margin:0px; }
 .userContainer .details li div.planetas span.conjuncao {background-position: 0 -46px;height: 16px;}
 .userContainer .details li div.planetas span.quadratura {background-position: 0 -61px}
 
-
-#conteudo.Cadastro form {
-width: 940px;
-float: left;
-margin-left: 20px;
- }
   
+#conteudo.Cadastro form { background-color: #; }
+  .Cadastro h1 { font-size: 32px; line-height: 32px; margin-bottom: 16px; }
+  #conteudo.Cadastro .control-group { border-top: 1px solid #CCC; float: left; padding: 0px 31px; margin-bottom: 32px; }
+    #conteudo.Cadastro label.control-label, #conteudo.Cadastro legend { border: 0px; color: #333; font-size: 16px; line-height: 16px; margin-bottom: 15px; padding: 16px 0px 0px; }
+      .my-new-list li { padding: 2px 0px; margin: 0px; }
+        #conteudo.Cadastro input[type=radio], #conteudo.Cadastro input[type=checkbox] { margin-top: 0px; margin-bottom: 0px; }
+        #email-update { margin-top: 28px; }
+    
 #conteudo.Cadastro form div.btn-group input[type=radio].invisible,
 #conteudo.Cadastro form div.btn-group input[type=checkbox].invisible {
   display:    block;
@@ -259,71 +261,14 @@ margin-left: 20px;
   opacity:    0;
 }
 
-#conteudo.Cadastro form div.location-choices li.radio.inline {
-  margin-left: 10px;
- }
+#conteudo.Cadastro form label small { font-size: 70%; }
+#conteudo.Cadastro .control-label .label-icon, #conteudo.Cadastro legend .label-icon { margin-right: 5px; }
 
-#conteudo.Cadastro form label.control-label,
-#conteudo.Cadastro form legend {
-display: block;
-width: 100%;
-padding: 0;
-margin-bottom: 15px;
-font-size: 19.5px;
-line-height: 36px;
-color: #AAA;
-border: 0;
-border-bottom: 1px solid #EEE;
- }
 
-#conteudo.Cadastro form #email-update {
-  margin-top: 48px;
-}
-
-#conteudo.Cadastro form fieldset fieldset legend {
-  border: 0;
-  font-size: 16px;
-}
-
-#conteudo.Cadastro form label small {
-font-size: 70%;
- }
-
-#conteudo.Cadastro form > div > .row {
-  margin-top: 40px;
- }
-
-#conteudo.Cadastro form  .control-label > .label-icon,
-#conteudo.Cadastro form  legend > .label-icon {
-  margin-top: 5px;
-  margin-right: 5px;
-}
-
-#conteudo.Cadastro form .mandatory .control-label ,
-#conteudo.Cadastro form .mandatory legend {
-color: #333;
-}
-
-legend + div.btn-group.controls, legend + fieldset  {
-  margin-top: 15px;
- }
-
-.popover-warning .popover-content {
-color: #C09853;
-background-color: #FCF8E3;
-border-color: #FBEED5;
-}
-.popover-warning .popover-title {
-color: #C09853;
-background-color: #FBEED5;
-}
-
-.popover-warning.top .arrow  {
-    border-top: 5px solid #C09853;
-}
-.popover-warning .popover-inner {
-    background: #C09853;
-}
+.popover-warning .popover-content { color: #C09853; background-color: #FCF8E3; border-color: #FBEED5; }
+.popover-warning .popover-title { color: #C09853; background-color: #FBEED5; }
+.popover-warning.top .arrow  { border-top: 5px solid #C09853; }
+.popover-warning .popover-inner { background: #C09853; }
 
 .userInfos h3 span.ascendente {color:#08C;}
 

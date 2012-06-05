@@ -114,235 +114,258 @@
       </header><!-- fecha header -->
 
 
+      <section id="conteudo" class="Cadastro grid_12">
 
-	  <div id="conteudo" class="Cadastro grid_12">
+        <h1>Configurações</h1>
 
+        <form id="ctl0_Main_ctl1">
+          <fieldset>
+            <div class="grid_12 alpha">
+              <!-- nome -->
+              <div class="control-group mandatory grid_5 alpha">
+                <legend for="ctl0_Main_Nome" data-original-title="">Nome:</legend>
+                <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-user"></i></span><input name="ctl0$Main$Nome" type="text" value="Pierre Andrews" id="ctl0_Main_Nome" class="textbox">
+                  </div>
+                  <!-- alerts -->
+                  <span id="ctl0_Main_ctl3" class="alert alert-error" style="display:block;">Digite o seu nome.</span>
+                  <span id="ctl0_Main_ctl4" class="alert alert-error" style="display:block;">O nome deve conter apenas letras, traço, apostrofe e deve conter de 3 a 120 letras.</span>
+                </div>
+              </div>
+              <!-- gênero -->
+              <div class="control-group mandatory grid_5 omega">
+                <legend data-original-title="">Genero:</legend>
+                <div class="btn-group controls">
+                  <button type="button" class="btn active">
+                    <span id="ctl0_Main_Masculino_parent" style="display:;">
+                      <input id="ctl0_Main_Masculino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Masculino" checked="checked" class="invisible">
+                      <label for="ctl0_Main_Masculino">Masculino</label>
+                    </span>
+                  </button>
+                  <button type="button" class="btn">
+                    <span id="ctl0_Main_Feminino_parent" style="display:;">
+                      <input id="ctl0_Main_Feminino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Feminino" class="invisible">
+                      <label for="ctl0_Main_Feminino">Feminino</label>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid_12 alpha">
+              <!-- cidade de nascimento -->
+              <div class="control-group mandatory grid_5 alpha">
+                <legend for="ctl0_Main_CidadeDeNascimento_CidadeNome" id="ctl0_Main_CidadeDeNascimento_Label" class="control-label" data-original-title="">Cidade de nascimento:</legend>
+                <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeDeNascimento$CidadeNome" type="text" value="Meyrin" id="ctl0_Main_CidadeDeNascimento_CidadeNome">
+                  </div>
+                  <!-- campos escondidos -->
+                  <input type="hidden" name="ctl0$Main$CidadeDeNascimento$Cidade" id="ctl0_Main_CidadeDeNascimento_Cidade" value="Meyrin">
+                  <input type="hidden" name="ctl0$Main$CidadeDeNascimento$Pais" id="ctl0_Main_CidadeDeNascimento_Pais" value="Suíça">
+                  <input type="hidden" name="ctl0$Main$CidadeDeNascimento$Estado" id="ctl0_Main_CidadeDeNascimento_Estado" value="">
+                  <input type="hidden" name="ctl0$Main$CidadeDeNascimento$Latitude" id="ctl0_Main_CidadeDeNascimento_Latitude" value="46.228439">
+                  <input type="hidden" name="ctl0$Main$CidadeDeNascimento$Longitude" id="ctl0_Main_CidadeDeNascimento_Longitude" value="6.07221">
+                  <!-- alert -->
+                  <span id="ctl0_Main_CidadeDeNascimento_Validator" style="display: none; color:red;">Cidade inválida.</span>
 
-		<h1 class="span12">Configurações</h1>
+                  <!-- lista de sugestões de cidades -->
+                  <div id="ctl0_Main_CidadeDeNascimento_choices" class="location-choices">
+                    <ul class="controls my-new-list">
+                      <li class="radio">
+                        <label class="radio" for="455827">
+                          <input type="radio" class="radio" id="455827" value="455827" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace" checked="true">
+                          São Paulo, São Paulo, Brasil
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label class="radio" for="20105181">
+                          <input type="radio" class="radio" id="20105181" value="20105181" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace">
+                          São Paulo, Lisboa, Portugal
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label class="radio" for="748328">
+                          <input type="radio" class="radio" id="748328" value="748328" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace">
+                          São Paulo, Coimbra, Portugal
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label class="radio" for="460852">
+                          <input type="radio" class="radio" id="460852" value="460852" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace">
+                          Salinas, Maranhão, Brasil
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label class="radio" for="456887">
+                          <input type="radio" class="radio" id="456887" value="456887" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace">
+                          Caatiba, Bahia, Brasil</label>
+                      </li>
+                    </ul>
+                  </div>
 
-		<form id="ctl0_Main_ctl1">
+                </div>
+              </div>
+              <!-- cidade que vive -->
+              <div class="control-group mandatory grid_5 omega">
+                <legend for="ctl0_Main_CidadeEmQueVive_CidadeNome" id="ctl0_Main_CidadeEmQueVive_Label" class="control-label" data-original-title="">Cidade em que vive:</legend>
+                <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeEmQueVive$CidadeNome" type="text" value="São Paulo" id="ctl0_Main_CidadeEmQueVive_CidadeNome">
+                  </div>
+                  <!-- campos escondidos -->
+                  <input type="hidden" name="ctl0$Main$CidadeEmQueVive$Cidade" id="ctl0_Main_CidadeEmQueVive_Cidade" value="São Paulo">
+                  <input type="hidden" name="ctl0$Main$CidadeEmQueVive$Pais" id="ctl0_Main_CidadeEmQueVive_Pais" value="Brasil">
+                  <input type="hidden" name="ctl0$Main$CidadeEmQueVive$Estado" id="ctl0_Main_CidadeEmQueVive_Estado" value="SP">
+                  <input type="hidden" name="ctl0$Main$CidadeEmQueVive$Latitude" id="ctl0_Main_CidadeEmQueVive_Latitude" value="-23.56288">
+                  <input type="hidden" name="ctl0$Main$CidadeEmQueVive$Longitude" id="ctl0_Main_CidadeEmQueVive_Longitude" value="-46.654659">
+                  <!-- alerts -->
+                  <span id="ctl0_Main_CidadeEmQueVive_Validator" class="alert alert-error" style="display: block;">Cidade inválida.</span>
+                  <div id="ctl0_Main_CidadeEmQueVive_choices" class="location-choices">
+                    <!-- show de cities list -->
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="grid_12 alpha">
+              <!-- data de nascimento -->
+              <div class="control-group mandatory grid_5 suffix_1 alpha">
+                <legend for="ctl0_Main_DataDeNascimento" class="control-label" data-original-title="">Data de nascimento <small>(dd/mm/aaaa)</small>:</legend>
+                <div class="controls">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-calendar"></i></span><input name="ctl0$Main$DataDeNascimento" type="text" value="26/09/2001" id="ctl0_Main_DataDeNascimento" class="textbox">
+                  </div>
+                  <!-- alerts -->
+                  <span id="ctl0_Main_ctl6" class="alert alert-error" style="display:block;">Digite a data de nascimento.</span>
+                  <span id="ctl0_Main_ctl7" class="alert alert-error" style="display:block;">Entre a data de nascimento no formato dd/mm/aaaa.</span>
+                  <span id="ctl0_Main_ctl8" class="alert alert-error" style="display:block;">Data inválida.</span>
+                </div>  
+              </div>
 
-		  <div class="span11 offset1">
-			<div class="row">
-			  <fieldset class="control-group span4 mandatory">
-				<label for="ctl0_Main_Nome" class="control-label" data-original-title="">Nome:</label>
-				<div class="controls">
-				  <div class="input-prepend">
-					<span class="add-on"><i class="icon-user"></i></span><input name="ctl0$Main$Nome" type="text" value="Pierre Andrews" id="ctl0_Main_Nome" class="textbox">
-				  </div>
-				  <span id="ctl0_Main_ctl3" class="alert alert-error  span2" style="display:none;color:red;">Digite o seu nome.</span>
-
-				  <span id="ctl0_Main_ctl4" class="alert alert-error  span2" style="display:none;color:red;">O nome deve conter apenas letras, traço, apostrofe e deve conter de 3 a 120 letras.</span>
-
-				</div>
-			  </fieldset>
-
-			  <fieldset class="control-group span4 mandatory">
-				<legend data-original-title="">Genero:</legend>
-				<div class="btn-group controls">
-				  <button type="button" class="btn active">
-					<span id="ctl0_Main_Masculino_parent" style="display:;"><input id="ctl0_Main_Masculino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Masculino" checked="checked" class="invisible"><label for="ctl0_Main_Masculino">Masculino</label></span>
-				  </button>
-				  <button type="button" class="btn">
-					<span id="ctl0_Main_Feminino_parent" style="display:;"><input id="ctl0_Main_Feminino" type="radio" name="ctl0$Main$genero" value="ctl0$Main$Feminino" class="invisible"><label for="ctl0_Main_Feminino">Feminino</label></span>
-				  </button>
-				</div>
-			  </fieldset>
-			</div>
-			
-			
-
-			<div class="row">
-			  <div class="span4 mandatory">
-				<div class="control-group">
-				  <label for="ctl0_Main_CidadeDeNascimento_CidadeNome" id="ctl0_Main_CidadeDeNascimento_Label" class="control-label" data-original-title="">Cidade de nascimento:</label>
-				  <div class="controls">
-					<div class="input-prepend">
-					  <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeDeNascimento$CidadeNome" type="text" value="Meyrin" id="ctl0_Main_CidadeDeNascimento_CidadeNome">
-					</div>
-					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Cidade" id="ctl0_Main_CidadeDeNascimento_Cidade" value="Meyrin">
-					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Pais" id="ctl0_Main_CidadeDeNascimento_Pais" value="Suíça">
-					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Estado" id="ctl0_Main_CidadeDeNascimento_Estado" value="">
-					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Latitude" id="ctl0_Main_CidadeDeNascimento_Latitude" value="46.228439">
-					<input type="hidden" name="ctl0$Main$CidadeDeNascimento$Longitude" id="ctl0_Main_CidadeDeNascimento_Longitude" value="6.07221">
-
-					<span id="ctl0_Main_CidadeDeNascimento_Validator" style="visibility:hidden;color:red;">Cidade inválida.</span>
-
-					<div id="ctl0_Main_CidadeDeNascimento_choices" class="location-choices control-group"><ul class="controls my-new-list"><li class="radio inline"><input type="radio" class="radio" id="455827" value="455827" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace" checked="true"><label for="455827">São Paulo, São Paulo, Brasil</label></li><li class="radio inline"><input type="radio" class="radio" id="20105181" value="20105181" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="20105181">São Paulo, Lisboa, Portugal</label></li><li class="radio inline"><input type="radio" class="radio" id="748328" value="748328" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="748328">São Paulo, Coimbra, Portugal</label></li><li class="radio inline"><input type="radio" class="radio" id="460852" value="460852" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="460852">Salinas, Maranhão, Brasil</label></li><li class="radio inline"><input type="radio" class="radio" id="456887" value="456887" name="ctl0_Main_CidadeEmQueVive_CidadeNomeselectedplace"><label for="456887">Caatiba, Bahia, Brasil</label></li></ul></div>
-				  </div>
-				</div>
-
-
-			  </div>
-
-			  <div class="span4 mandatory">
-				<div class="control-group error">
-				  <label for="ctl0_Main_CidadeEmQueVive_CidadeNome" id="ctl0_Main_CidadeEmQueVive_Label" class="control-label" data-original-title="">Cidade em que vive:</label>
-				  <div class="controls">
-					<div class="input-prepend">
-					  <span class="add-on"><i class="icon-map-marker"></i></span><input name="ctl0$Main$CidadeEmQueVive$CidadeNome" type="text" value="São Paulo" id="ctl0_Main_CidadeEmQueVive_CidadeNome">
-					</div>
-					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Cidade" id="ctl0_Main_CidadeEmQueVive_Cidade" value="São Paulo">
-					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Pais" id="ctl0_Main_CidadeEmQueVive_Pais" value="Brasil">
-					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Estado" id="ctl0_Main_CidadeEmQueVive_Estado" value="SP">
-					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Latitude" id="ctl0_Main_CidadeEmQueVive_Latitude" value="-23.56288">
-					<input type="hidden" name="ctl0$Main$CidadeEmQueVive$Longitude" id="ctl0_Main_CidadeEmQueVive_Longitude" value="-46.654659">
-
-					<span id="ctl0_Main_CidadeEmQueVive_Validator" style="visibility:hidden;color:red;">Cidade inválida.</span>
-					<div id="ctl0_Main_CidadeEmQueVive_choices" class="location-choices control-group"><div class="span2 alert alert-error">Cidade obrigatória.</div></div>
-				  </div>
-				</div>
-
-			  </div>
-			</div>
-
-			
-			
-
-			<div class="row">
-			  <fieldset class="control-group span4 mandatory">
-				<label for="ctl0_Main_DataDeNascimento" class="control-label" data-original-title="">Data de nascimento <small>(dd/mm/aaaa)</small>:</label>
-				<div class="input-prepend">
-				  <span class="add-on"><i class="icon-calendar"></i></span><input name="ctl0$Main$DataDeNascimento" type="text" value="26/09/2001" id="ctl0_Main_DataDeNascimento" class="textbox">
-				</div>
-				<span id="ctl0_Main_ctl6" class="alert alert-error  span2" style="display:none;color:red;">Digite a data de nascimento.</span>
-
-				<span id="ctl0_Main_ctl7" class="alert alert-error  span2" style="display:none;color:red;">Entre a data de nascimento no formato dd/mm/aaaa.</span>
-
-				<span id="ctl0_Main_ctl8" class="alert alert-error  span2" style="display:none;color:red;">Data inválida.</span>
-
-			  </fieldset>
-
-			  <fieldset class="control-group span4" id="horario">
-				<label for="ctl0_Main_HorarioDeNascimento" class="control-label" data-original-title="">Horário de nascimento <small>(hh:mm)</small>: </label>
-				<div class="input-prepend" id="time">
-				  <span class="add-on"><i class="icon-time"></i></span><input name="ctl0$Main$HorarioDeNascimento" type="text" value="14:54" id="ctl0_Main_HorarioDeNascimento" class="textbox">
-				</div>
-				
-		  		<div class="controls" id="naosei">
-				  <span class="checkbox inline" id="ctl0_Main_NaoSeiHorarioNascimento_parent"><input id="ctl0_Main_NaoSeiHorarioNascimento" type="checkbox" name="ctl0$Main$NaoSeiHorarioNascimento"><label for="ctl0_Main_NaoSeiHorarioNascimento">Não sei o horário de nascimento</label></span>
-				</div>
-
-				<span id="ctl0_Main_ctl10" class="alert alert-error  span2" style="display:none;color:red;">Entre a hora de nascimento no formato hh:mm.</span>
-
-				<span id="ctl0_Main_ctl11" class="alert alert-error  span2" style="display:none;color:red;">Digite a hora de nascimento.</span>
-				<span id="ctl0_Main_ctl12" class="alert alert-error  span2" style="display:none;color:red;">Hora inválida.</span>
-			  </fieldset>
-			  
-			  <div class="offset4 span4" id="hv" style="display: block; ">
-				<span id="ctl0_Main_nasceuDuranteHV" class="control-label">Nasceu durante o horário de verão?</span>
-				<div class="controls">
-				  <div class="btn-group">
-					<button type="button" class="btn active">
-					  <span id="ctl0_Main_HorarioDeVerao1_parent" style="display:;"><input id="ctl0_Main_HorarioDeVerao1" type="radio" name="ctl0$Main$HV" value="ctl0$Main$HorarioDeVerao1" checked="checked" class="invisible"><label for="ctl0_Main_HorarioDeVerao1">Sim</label></span>
-					</button>
-					<button type="button" class="btn">
-					  <span id="ctl0_Main_HorarioDeVerao2_parent" style="display:;"><input id="ctl0_Main_HorarioDeVerao2" type="radio" name="ctl0$Main$HV" value="ctl0$Main$HorarioDeVerao2" class="invisible"><label for="ctl0_Main_HorarioDeVerao2">Não</label></span>
-					</button>
-				  </div>
-				</div>
-
-				<div class="modal alert-error hide fade in" id="horarioModal">
-				  <div class="modal-header">
-					<button class="close" data-dismiss="modal">×</button>
-					<h3>Atenção:</h3>
-				  </div>
-				  <div class="modal-body">
-					<p>sem o horário de nascimento, não é possível calcular com precisão a compatibilidade de alguns planetas. Dessa forma, as compatibilidades serão calculadas, mas de maneira incompleta. Para achar o seu horário de nascimento, procure-o em sua certidão de nascimento.</p>
-				  </div>
-				  <div class="modal-footer">
-					<a href="#" class="btn btn-primary" data-dismiss="modal">Ok</a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-
-
-			
-			
-			
-			
-
-
-			
-			<div class="row">
-			  <fieldset class="control-group mandatory error">
-				<div class="controls span4">
-				  <label for="ctl0_Main_Email" class="control-label" data-original-title="">Email:</label>
-				  <div class="input-prepend">
-					<span class="add-on">@</span><input name="ctl0$Main$Email" type="text" value="pierre.andrews@gmail.com" id="ctl0_Main_Email" class="textbox">
-				  </div>
-				  <span id="ctl0_Main_ctl15" class="alert alert-error  span2">Entre com o seu e-mail.</span>
-				  <span id="ctl0_Main_ctl16" class="alert alert-error span2">Entre com um e-mail válido.</span>
-				</div>
-				<div class="controls span4 checkbox inline" id="email-update">
-				  <span class="checkbox" id="ctl0_Main_NovasCompatibilidades_parent"><input id="ctl0_Main_NovasCompatibilidades" type="checkbox" name="ctl0$Main$NovasCompatibilidades" checked="checked"><label for="ctl0_Main_NovasCompatibilidades">Desejo receber mensagens do Astrowiki informando-me sobre novas compatibilidades</label></span>
-				</div>
-			  </fieldset>
-			</div>
-
-			
-
-			<div class="row">
-			  <fieldset class="control-group row span4 offset2 mandatory">
-				<legend data-original-title="">Disponível para:</legend>
-				<fieldset>
-				  <legend class="control-label">Mulheres:</legend>
-				  <div class="controls">
-					<div class="btn-group">
-					  <button type="button" class="btn active">
-						<span id="ctl0_Main_DisponivelAmorMulheres_parent"><input id="ctl0_Main_DisponivelAmorMulheres" type="checkbox" name="ctl0$Main$DisponivelAmorMulheres" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmorMulheres">Amor</label></span>
-					  </button>
-					  <button type="button" class="btn over18" style="display: block; ">
-						<span id="ctl0_Main_DisponivelSexoMulheres_parent" style=""><input id="ctl0_Main_DisponivelSexoMulheres" type="checkbox" name="ctl0$Main$DisponivelSexoMulheres" class="invisible"><label for="ctl0_Main_DisponivelSexoMulheres">Sexo</label></span>
-					  </button>
-					  <button type="button" class="btn active">
-						<span id="ctl0_Main_DisponivelAmizadeMulheres_parent"><input id="ctl0_Main_DisponivelAmizadeMulheres" type="checkbox" name="ctl0$Main$DisponivelAmizadeMulheres" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmizadeMulheres">Amizade</label></span>
-					  </button>
-					  <button type="button" class="btn over18" style="display: block; ">
-						<span id="ctl0_Main_DisponivelNegociosMulheres_parent" style=""><input id="ctl0_Main_DisponivelNegociosMulheres" type="checkbox" name="ctl0$Main$DisponivelNegociosMulheres" class="invisible"><label for="ctl0_Main_DisponivelNegociosMulheres">Negócios</label></span>
-					  </button>
-					</div>
-				  </div>
-				</fieldset>
-
-				<fieldset>
-				  <legend class="control-label">Homens:</legend>
-				  <div class="controls">
-					<div class="btn-group">
-					  <button type="button" class="btn">
-						<span id="ctl0_Main_DisponivelAmorHomens_parent"><input id="ctl0_Main_DisponivelAmorHomens" type="checkbox" name="ctl0$Main$DisponivelAmorHomens" class="invisible"><label for="ctl0_Main_DisponivelAmorHomens">Amor</label></span>
-					  </button>
-					  <button type="button" class="btn over18" style="display: block; ">
-						<span id="ctl0_Main_DisponivelSexoHomens_parent" style=""><input id="ctl0_Main_DisponivelSexoHomens" type="checkbox" name="ctl0$Main$DisponivelSexoHomens" class="invisible"><label for="ctl0_Main_DisponivelSexoHomens">Sexo</label></span>
-					  </button>
-					  <button type="button" class="btn active">
-						<span id="ctl0_Main_DisponivelAmizadeHomens_parent"><input id="ctl0_Main_DisponivelAmizadeHomens" type="checkbox" name="ctl0$Main$DisponivelAmizadeHomens" checked="checked" class="invisible"><label for="ctl0_Main_DisponivelAmizadeHomens">Amizade</label></span>
-					  </button>
-					  <button type="button" class="btn over18" style="display: block; ">
-						<span id="ctl0_Main_DisponivelNegociosHomens_parent" style=""><input id="ctl0_Main_DisponivelNegociosHomens" type="checkbox" name="ctl0$Main$DisponivelNegociosHomens" class="invisible"><label for="ctl0_Main_DisponivelNegociosHomens">Negócios</label></span>
-					  </button>
-					</div>
-				  </div>
-				</fieldset>
-				<span id="ctl0_Main_ctl17" class="alert alert-error  span2" style="display:none;color:red;">Você deve estar disponível pelo menos para uma categoria.</span>
-			  </fieldset>
-
-			</div>
-		  </div>
-		  <div class="row">
-			<div class="form-actions">
-			  <div class="span4 offset4">
-				<input type="submit" name="ctl0$Main$Confirma" value="Confirma" id="ctl0_Main_Confirma" class="btn btn-primary">
-			  </div>
-			</div>
-		  </div>
-		</form>
-
-
-
-	  </div>      
-    </div>    
+              <!-- horário de nascimento -->
+              <div class="control-group grid_5 suffix_1 omega" id="horario">
+                <legend for="ctl0_Main_HorarioDeNascimento" class="control-label" data-original-title="">Horário de nascimento <small>(hh:mm)</small>:</legend>
+                <div class="controls">
+                  <div class="input-prepend" id="time">
+                    <span class="add-on"><i class="icon-time"></i></span><input name="ctl0$Main$HorarioDeNascimento" type="text" value="14:54" id="ctl0_Main_HorarioDeNascimento" class="textbox">
+                  </div>
+                </div>
+                <div class="controls" id="naosei">
+                  <span class="checkbox inline" id="ctl0_Main_NaoSeiHorarioNascimento_parent">
+                    <label for="ctl0_Main_NaoSeiHorarioNascimento">
+                      <input id="ctl0_Main_NaoSeiHorarioNascimento" type="checkbox" name="ctl0$Main$NaoSeiHorarioNascimento">
+                      Não sei o horário de nascimento
+                    </label>
+                  </span>
+                </div>
+                <div class="controls" id="hv">
+                  <span class="checkbox inline" id="ctl0_Main_nasceuDuranteHV">
+                    <label for="ctl0_Main_NaoSeiHorarioNascimento">
+                      <input id="ctl0_Main_NaoSeiHorarioNascimento" type="checkbox" name="ctl0$Main$NaoSeiHorarioNascimento">
+                      Nasci no horário de verão
+                    </label>
+                  </span>
+                </div>
+                <!-- alerts -->
+                <span id="ctl0_Main_ctl10" class="alert alert-error" style="display:block;">Entre a hora de nascimento no formato hh:mm.</span>
+                <span id="ctl0_Main_ctl11" class="alert alert-error" style="display:block;">Digite a hora de nascimento.</span>
+                <span id="ctl0_Main_ctl12" class="alert alert-error" style="display:block;">Hora inválida.</span>
+                <div class="modal alert-error hide fade in" id="horarioModal">
+                  <div class="modal-header">
+                    <button class="close" data-dismiss="modal">×</button>
+                    <h3>Atenção:</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>sem o horário de nascimento, não é possível calcular com precisão a compatibilidade de alguns planetas. Dessa forma, as compatibilidades serão calculadas, mas de maneira incompleta. Para achar o seu horário de nascimento, procure-o em sua certidão de nascimento.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Ok</a>
+                  </div>
+                </div>
+              </div>  
+            </div>  
+            <div class="grid_12 alpha">
+              <!-- email -->
+              <div class="control-group mandatory">
+                <div class="controls grid_5 suffix_1 alpha">
+                  <legend for="ctl0_Main_Email" class="control-label" data-original-title="">Email:</legend>
+                  <div class="input-prepend">
+                    <span class="add-on">@</span><input name="ctl0$Main$Email" type="text" value="pierre.andrews@gmail.com" id="ctl0_Main_Email" class="textbox">
+                  </div>
+                  <!-- alerts -->
+                  <span id="ctl0_Main_ctl15" class="alert alert-error" style="display: block;">Entre com o seu e-mail.</span>
+                  <span id="ctl0_Main_ctl16" class="alert alert-error" style="display: block;">Entre com um e-mail válido.</span>
+                </div>
+                <div class="controls grid_5 omega" id="email-update">
+                  <span class="checkbox" id="ctl0_Main_NovasCompatibilidades_parent">
+                    <label for="ctl0_Main_NovasCompatibilidades">
+                      <input id="ctl0_Main_NovasCompatibilidades" type="checkbox" name="ctl0$Main$NovasCompatibilidades" checked="checked">
+                      Desejo receber mensagens do Astrowiki informando-me sobre novas compatibilidades
+                    </label>
+                  </span>
+                </div>
+              </div>
+            </div>  
+            
+            <div class="grid_12 alpha">
+              <!-- disponível para -->
+              <div class="control-group mandatory">
+                <legend data-original-title="">Disponível para:</legend>
+                <div class="grid_5 suffix_1 alpha">
+                  <label class="control-label" for="inlineCheckboxes">Homens</label>
+                  <div class="controls">
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option1">
+                      amor
+                    </label>
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option2">
+                      sexo
+                    </label>  
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option3">
+                      amizade
+                    </label>
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option3">
+                      negócios
+                    </label>  
+                  </div>
+                  <span id="ctl0_Main_ctl17" class="alert alert-error" style="display:block;">Você deve estar disponível pelo menos para uma categoria.</span>
+                </div>
+                <div class="grid_5 omega">
+                  <label class="control-label" for="inlineCheckboxes">Mulheres</label>
+                  <div class="controls">
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option1">
+                      amor
+                    </label>
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option2">
+                      sexo
+                    </label>  
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option3">
+                      amizade
+                    </label>
+                    <label class="checkbox">
+                      <input id="inlineCheckbox1" type="checkbox" value="option3">
+                      negócios
+                    </label>  
+                  </div>
+                </div>
+              </div>
+              
+            </div>  
+            <div class="grid_12 alpha">
+              <div class="form-actions">
+                <input type="submit" name="ctl0$Main$Confirma" value="Confirma" id="ctl0_Main_Confirma" class="btn btn-primary">
+              </div>
+            </div>  
+            
+          </fieldset>  
+        </form>
+      </section>      
     
     <!-- Le javascript
 		 ================================================== -->
