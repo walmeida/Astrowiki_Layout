@@ -260,6 +260,7 @@ label { font-size: 12px; line-height:16px; margin:0px; }
 .popover-warning .popover-content { color: #C09853; background-color: #FCF8E3; border-color: #FBEED5; }
 .popover-warning .popover-title { color: #C09853; background-color: #FBEED5; }
 .popover-warning.top .arrow  { border-top: 5px solid #C09853; }
+.popover-warning.bottom .arrow  { border-bottom: 5px solid #C09853; }
 .popover-warning .popover-inner { background: #C09853; }
 
 .userInfos h3 span.ascendente {color:#08C;}
