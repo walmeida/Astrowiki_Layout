@@ -311,7 +311,7 @@
               <!-- disponível para -->
               <div class="control-group mandatory">
                 <legend data-original-title="">Disponível para:</legend>
-                <div class="grid_5 suffix_1 alpha">
+                <div class="grid_5 suffix_1 alpha notMandatory">
                   <label class="control-label" for="inlineCheckboxes">Homens</label>
                   <div class="controls">
                     <label class="checkbox">
@@ -333,7 +333,7 @@
                   </div>
                   <span id="ctl0_Main_ctl17" class="alert alert-error" style="display:block;">Você deve estar disponível pelo menos para uma categoria.</span>
                 </div>
-                <div class="grid_5 omega">
+                <div class="grid_5 omega  notMandatory">
                   <label class="control-label" for="inlineCheckboxes">Mulheres</label>
                   <div class="controls">
                     <label class="checkbox">
@@ -427,9 +427,9 @@
 	horarioModal()}
 	});
 
-	jQuery('.mandatory label.control-label, .mandatory legend').not('fieldset fieldset legend').prepend('<i class="label-icon icon-edit"></i>').tooltip({title: "obrigatório", placement: "left"});
+	jQuery('.mandatory label.control-label, .mandatory legend').not('fieldset fieldset legend').not('.notMandatory label').prepend('<i class="label-icon icon-edit"></i>').tooltip({title: "obrigatório", placement: "left"});
 
-	jQuery('#horario > label').prepend('<i class="label-icon icon-info-sign"></i>').popover({content: 'test', title:'Aviso:', template:'<div class="popover-warning popover fade in"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"> Aviso: </h3><div class="popover-content">A ausência do horário de nascimento diminui a precisão das compatibilidades astrológicas.</div></div></div>', placement:'top'});
+	jQuery('#horario > legend').prepend('<i class="label-icon icon-info-sign"></i>').popover({content: 'test', title:'Aviso:', template:'<div class="popover-warning popover fade in"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"> Aviso: </h3><div class="popover-content">A ausência do horário de nascimento diminui a precisão das compatibilidades astrológicas.</div></div></div>', placement:'bottom'});
 
 
 	});
