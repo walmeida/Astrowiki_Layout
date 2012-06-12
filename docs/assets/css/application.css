@@ -132,12 +132,10 @@ label { font-size: 12px; line-height:16px; margin:0px; }
   /* action container */
   .userContainer .actionsContainer { border-top: 1px solid #CCC; float: left; font-size: 12px;margin: 0px 0px 16px; padding: 0px;  } 
     /* actions menu*/
-    .userContainer .actionsMenu { float: left; padding: 5px 0px 12px; margin-top: 2px; }
+    .userContainer .actionsMenu { float: left; padding: 9px 0px 12px; margin-top: 2px; }
       .userContainer .actionsMenu input[type=checkbox] { display: inline; float: left; margin-top: 4px; }
-      .userContainer .actionsMenu label { display: inline; float: left; margin-left: 4px }
-      .userContainer .actionsMenu i { display: inline; float: left; margin-top: 6px }
-      .userContainer .actionsMenu .btn { padding: 0px 4px; } 
-        .userContainer .actionsMenu .btn i { margin: 2px 4px 0px 0px; }
+      .userContainer .actionsMenu label { display: inline; float: left; }
+      .userContainer .actionsMenu i { display: inline; float: left; margin: 2px 4px 0px 0px }
       .userContainer .actionsMenu li { display: inline; float: left; margin-right: 16px }
     /* actions messages list e massagem list */
     .messagesList {border-top: 1px dotted #CCC; float: left; width: 100%}
