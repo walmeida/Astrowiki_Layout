@@ -258,10 +258,13 @@ label { font-size: 12px; line-height:16px; margin:0px; }
       .my-new-list li { padding: 2px 0px; margin: 0px; }
         #conteudo.Cadastro input[type=radio], #conteudo.Cadastro input[type=checkbox] { margin-top: 0px; margin-bottom: 0px; }
         #email-update { margin-top: 28px; }
+  .availableFor li { background-color: #F2F2F2; border-bottom: 1px solid #FFF; display: block; float: left; width: 100%; }      
+    .availableFor li label.checkboxInline { float: left; margin-right: 80px; padding: 16px 0px; }      
+      .availableFor li label.checkboxInline input[type="checkbox"] { float: left; margin-right: 4px; }
+    #conteudo.Cadastro .availableFor li label.control-label { padding-left: 4px; }      
     
 #conteudo.Cadastro form div.btn-group input[type=radio].invisible,
 #conteudo.Cadastro form div.btn-group input[type=checkbox].invisible {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;  opacity: 0; }
-
 #conteudo.Cadastro form legend small { color: #333; font-size: 70%; }
 #conteudo.Cadastro .control-label .label-icon, #conteudo.Cadastro legend .label-icon { margin-right: 5px; }
 

@@ -307,56 +307,68 @@
               </div>
             </div>  
             
-            <div class="grid_12 alpha">
+            <div class="grid_12 availableFor alpha">
               <!-- disponível para -->
               <div class="control-group mandatory">
                 <legend data-original-title="">Disponível para:</legend>
-                <div class="grid_5 suffix_1 alpha notMandatory">
-                  <label class="control-label" for="inlineCheckboxes">Homens</label>
-                  <div class="controls">
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option1">
-                      amor
-                    </label>
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option2">
-                      sexo
-                    </label>  
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option3">
-                      amizade
-                    </label>
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option3">
-                      negócios
-                    </label>  
-                  </div>
-                  <span id="ctl0_Main_ctl17" class="alert alert-error" style="display:block;">Você deve estar disponível pelo menos para uma categoria.</span>
-                </div>
-                <div class="grid_5 omega  notMandatory">
-                  <label class="control-label" for="inlineCheckboxes">Mulheres</label>
-                  <div class="controls">
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option1">
-                      amor
-                    </label>
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option2">
-                      sexo
-                    </label>  
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option3">
-                      amizade
-                    </label>
-                    <label class="checkbox">
-                      <input id="inlineCheckbox1" type="checkbox" value="option3">
-                      negócios
-                    </label>  
-                  </div>
-                </div>
-              </div>
+                <ul class="grid alpha notMandatory">
+                  <li>
+                    <div class="grid_2 alpha">
+                      <label class="control-label" for="inlineCheckboxes">Amor</label>
+                    </div>
+                    <div class="controls grid_8 omega">
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option1">
+                        homens
+                      </label>
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option2">
+                        mulheres
+                      </label>  
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid_2 alpha">
+                      <label class="control-label" for="inlineCheckboxes">Sexo</label>
+                    </div>
+                    <div class="controls grid_8 omega">
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option1">
+                        homens
+                      </label>
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option2">
+                        mulheres
+                      </label>  
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid_2 alpha">
+                      <label class="control-label" for="inlineCheckboxes">Amizade</label>
+                    </div>
+                    <div class="controls grid_8 omega">
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option1">
+                        homens e mulheres
+                      </label> 
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid_2 alpha">
+                      <label class="control-label" for="inlineCheckboxes">Negócios</label>
+                    </div>
+                    <div class="controls grid_8 omega">
+                      <label class="checkboxInline">
+                        <input id="inlineCheckbox1" type="checkbox" value="option1">
+                        homens e mulheres
+                      </label> 
+                    </div>
+                  </li>
+                </ul>    
+                <span id="ctl0_Main_ctl17" class="alert alert-error" style="display:none;">Você deve estar disponível pelo menos para uma categoria.</span>
               
-            </div>  
+              </div>
+            </div>    
             <div class="grid_12 alpha">
               <div class="form-actions">
                 <input type="submit" name="ctl0$Main$Confirma" value="Confirma" id="ctl0_Main_Confirma" class="btn btn-primary">
