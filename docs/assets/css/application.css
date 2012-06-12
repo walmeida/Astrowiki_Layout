@@ -1,4 +1,4 @@
-body, li { font-family: helvetica, arial, sans-serif; font-size: 12px; line-height: 16px; }
+body { font-family: helvetica, arial, sans-serif; font-size: 12px; line-height: 16px; }
 .over_grid { background-color: #FFF; display: block; position: absolute; top: 1px; left: 0px; width: 100%; height:500%; background: url('../../../img/grid.png') repeat-y center top; opacity: 0.5; z-index: -1;}
 
 ul { list-style: none; margin: 0px; }
@@ -63,22 +63,23 @@ label { font-size: 12px; line-height:16px; margin:0px; }
   
   
 .inviteFriends { }
-  .inviteFriends .friendsList { border-top: 1px solid #08C; float: left; margin-bottom: 32px; width: inherit; }
-    .inviteFriends .friendsList h1.listTitle { color: #08C; font-weight: normal; padding: 4px 4px 16px; }
-  .inviteFriends .friendsList img { height: 32px; width: 32px; }
   .inviteNotification .alert-info {padding: 16px 124px; margin-bottom: 32px; }
     .inviteNotification h4 {font-size: 32px; line-height: 32px; padding: 6px 0px 13px;}
     .inviteNotification h4 {font-size: 32px; line-height: 32px; padding: 6px 0px 13px;}
     .inviteNotification p {font-weight: bold; padding: 0px;}
-    .inviteNotification ul {list-style: disc outside; margin-bottom: 16px;}
-    
+    .inviteNotification ul {list-style: disc outside; margin-bottom: 16px; }
+      .inviteNotification ul li {line-height: 16px; }
     .inviteNotification button {margin-top: 15px;}
-      .oneFriend {padding: 8px 0px;}
+  .inviteFriends .friendsList { border-top: 1px solid #08C; float: left; margin: 7px 0px 9px; width: inherit; }
+    .inviteFriends .friendsList h1.listTitle { color: #08C; font-weight: normal; line-height: 32px; padding: 6px 4px 17px; }
+    .inviteFriends .friendsList img { height: 32px; width: 32px; }
+      .oneFriend {padding: 8px 0px 6px; margin-bottom: 4px; }
       .oneFriend:hover {background-color: rgba(0,136,204,0.1);}
         .oneFriend .avatar {margin: 0px 4px;}
         .oneFriend h1, .oneFriend h2 {height: 16px; overflow: hidden; }
         .oneFriend input[type="checkbox"] { margin: 0px 4px 0px -18px; padding: 0px }
-        .oneFriend .btn-group { margin-top: 8px;}
+        .oneFriend .selectFriends { border-top: 1px solid rgba(0,136,204,0.2); display: block; float: left; margin-top: 7px; padding: 8px 0px 0px; width: 100%; }
+        .oneFriend .selectFriends label { float: left; margin: 0px 12px 0px 4px }
   .loadingNotification { background-color: #F2F2F2; border-radius: 6px 6px 6px 6px; margin-bottom: 30px; padding: 60px; }
     .loadingNotification h1 { padding-bottom: 30px; }
     

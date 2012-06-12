@@ -55,7 +55,7 @@
           <a href="/astrowiki2/trunk/index.php?page=Termosdeuso">termos de uso</a>
         </div>
         <div class="">
-          <a href="/astrowiki2/trunk/index.php?page=Lista"><img src="/astrowiki2/trunk/assets/d2ccc8f0/astro_afim.png" <="" a="">
+          <a href="/astrowiki2/trunk/index.php?page=Lista"><img src="img/astro_afim.png" <="" a="">
           </a><a class="btn btn-primary invite" href="/astrowiki2/trunk/index.php?page=Escolheramigos">
             <i class="icon-user icon-white"></i>
             convide um amigo
@@ -63,7 +63,7 @@
         </div>
 		
 		<ul class="nav nav-tabs mainNav">
-			<li class="">
+			<li class="active">
 <a href="/astrowiki2/trunk/index.php?page=Lista&amp;tipo=compatibilidade#view=compatibilidade" class="dyn">compatibilidade</a>
 		  </li>
 		  <li class="">
@@ -113,7 +113,7 @@
 
   <section class="inviteFriends grid_12">
 
-    <div class="inviteNotification">
+    <div class="inviteNotification none">
       <div class="alert alert-info">
         <h4 class="alert-heading">Com quais amigos você quer medir sua compatibilidade?</h4>
         
@@ -165,7 +165,7 @@
       </ul>
     </div>
 
-    <div class="loadingNotification grid_10 clearfix">
+    <div class="loadingNotification grid_10 clearfix none">
       <h1>Estamos buscando sua lista de amigos...</h1>
       <div class="progress progress-striped active">
         <div class="bar" style="width: 100%;"></div>
@@ -177,30 +177,11 @@
       <div class="oneFriend grid_3 alpha goodFriend">
         <div class="userInfos">
           <img src="img/userThumb.jpg" alt=""></a>
-          <div class="float-left">
-            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
-            <h2>cidade, país</h2>
-            <div class="btn-group" data-toggle="buttons-radio">
-              <span class="btn btn-mini disabled" rel="tooltip" data-original-title="Isso não funciona no Alpha Release">
-                convidar
-              </span>
-              <span class="btn btn-mini">
-                só medir
-              </span>
-            </div>
-            <!--
-            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
-            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
-            -->
-          </div>  
-        </div>
-	    </div>
-      <div class="oneFriend grid_3 goodFriend">
-        <div class="userInfos">
-          <img src="img/userThumb.jpg" alt=""></a>
           <div class="grid_2 alpha">
             <h1 class="firstLine"><strong>nome do usuário</strong></h1>
             <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
             <label class="checkbox">
               <input type="checkbox" disabled="disabled">
               convidar
@@ -215,27 +196,23 @@
             -->
           </div>  
         </div>
-	    </div>    
-    </div>  
-              
-    <div class="friendsList clearfix" id="badFriendsList">
-      <h1 class="listTitle">amigos que você deve convidar antes de medir</h1>
-      <div class="alert alert-warning">
-        <h4 class="alert-header">Os amigos a seguir não têm algumas informações necessárias para medir a compatibilidade com você neste momento.</h4>
-        <p>Os amigos a seguir não têm algumas informações necessárias para medir a compatibilidade com você neste momento. Mas você pode convidá-los a participar do AstroAfim e daí poderemos medir as compatibilidades.</p>
-        <p>Lembre-se que a cada 5 amigos que aceitarem o seu convite, você ganha 1 crédito para falar com uma pessoa desconhecida no AstroAfim.</p>
-      </div>
-      <div class="oneFriend grid_3 alpha goodFriend">
+	    </div>
+      <div class="oneFriend grid_3 goodFriend">
         <div class="userInfos">
           <img src="img/userThumb.jpg" alt=""></a>
-          <div class="float-left">
+          <div class="grid_2 alpha">
             <h1 class="firstLine"><strong>nome do usuário</strong></h1>
-            <h2>cidade, país</h2>
-            <div class="btn-group" data-toggle="buttons-radio">
-              <span class="btn btn-mini disabled" rel="tooltip" data-original-title="Isso não funciona no Alpha Release">
-                convidar
-              </span>
-            </div>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
             <!--
             <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
             <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
@@ -243,14 +220,206 @@
           </div>  
         </div>
 	    </div>
-      <div class="oneFriend grid_3 badFriend">
+	    <div class="oneFriend grid_3 goodFriend">
         <div class="userInfos">
           <img src="img/userThumb.jpg" alt=""></a>
           <div class="grid_2 alpha">
             <h1 class="firstLine"><strong>nome do usuário</strong></h1>
             <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
             <label class="checkbox">
               <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 omega goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 alpha goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 omega goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 alpha goodFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              só medir
+            </label>  
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	         
+    </div>  
+              
+    <div class="friendsList clearfix" id="badFriendsList">
+      <h1 class="listTitle">amigos que você deve convidar antes de medir</h1>
+      <div class="alert alert-warning none">
+        <h4 class="alert-header">Os amigos a seguir não têm algumas informações necessárias para medir a compatibilidade com você neste momento.</h4>
+        <p>Os amigos a seguir não têm algumas informações necessárias para medir a compatibilidade com você neste momento. Mas você pode convidá-los a participar do AstroAfim e daí poderemos medir as compatibilidades.</p>
+        <p>Lembre-se que a cada 5 amigos que aceitarem o seu convite, você ganha 1 crédito para falar com uma pessoa desconhecida no AstroAfim.</p>
+      </div>
+      <div class="oneFriend grid_3 alpha badFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
+              convidar
+            </label> 
+            <!--
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Convidar Amigo</label>
+            <input type="checkbox" name="chkboxamigo[]" value="523185688" /><label for="">Só mostrar as compatibilidades disponíveis</label>
+            -->
+          </div>  
+        </div>
+	    </div>
+	    <div class="oneFriend grid_3 badFriend">
+        <div class="userInfos">
+          <img src="img/userThumb.jpg" alt=""></a>
+          <div class="grid_2 alpha">
+            <h1 class="firstLine"><strong>nome do usuário</strong></h1>
+            <h2>outra cidade, mais um, país</h2>
+          </div>
+          <div class="selectFriends">  
+            <label class="checkbox">
+              <input type="checkbox" disabled="disabled">
               convidar
             </label> 
             <!--
