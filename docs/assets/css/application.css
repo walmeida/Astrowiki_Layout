@@ -16,7 +16,7 @@ label { font-size: 12px; line-height:16px; margin:0px; }
   header .aboutMenu { border-bottom: 1px solid #0088CC; color: #08C; font-size: 12px; margin-bottom: 1px; padding-top: 16px; text-align: right; }
     header .aboutMenu a { color: #08C; padding: 0px 4px; }
     header .aboutMenu .barbaraLink { text-align: left; float: left; }
-  #header img { padding: 16px 4px 41px 4px}
+  #header img { padding: 12px 4px 39px 0px}
     #header img.avatar { padding: 0px; height: 24px; width: 24px; margin: 0px 4px; }
   #header .btn.invite { float: right; margin: 18px 16px 0px 0px }
   #header ul.nav-tabs { font-size: 14px; border-bottom: 2px solid #0088CC; margin-bottom: 32px; }
