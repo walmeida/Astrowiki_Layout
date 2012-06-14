@@ -285,9 +285,7 @@ label { font-size: 12px; line-height:16px; margin:0px; }
 
 #comet { display: none; }
 
-.modal.buyModal .modal-header {
-  height: 70px;
-}
+.modal.buyModal .modal-header { float: left; padding: 15px; width: 530px; }
 
 .modal.buyModal .modal-header .details div {
   font-size: 15px;

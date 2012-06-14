@@ -51,50 +51,48 @@
 <a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
 
   <div class="modal hide fade in buyModal" id="myModal">
-	<div class="modal-header">
-	  <button class="close" data-dismiss="modal">×</button>
-	  <h3>
-	  <div class="userInfosalpha">
-        <div class="userLogo grid_1 alpha">
-          <img src="https://graph.facebook.com/100003214385461/picture?small" alt="">
+	  <div class="modal-header notUser">
+  	  <button class="close" data-dismiss="modal">×</button>
+  	  <div class="userInfos grid_4 alpha">
+        <div class="grid_1 alpha">
+          <a href=""><img src="img/userThumb.jpg" alt=""></a>
         </div>
-        <div class="details">
-		  <strong>Descubra o nome</strong>
-		  <div>38 — São Paulo</div>
-          <div  class="libra signo">Libra</div>
-        </div>
+        <div class="grid_3 omega">
+          <h1><strong>nome do usuário</strong></h1>
+          <h2>idade — cidade</h2>
+          <h3>signo<span> / [asc: ascendente]</span></h3>
+        </div>  
       </div>
-	  </h3>
-	</div>
-	<div class="modal-body">
-	  <!-- displayed if the user has enough credits, in the first step -->
-	  <p>Essa ação vai custar R$ <span class="buyValue">1</span>. Você tem R$ <span class="saldo">10</span>.</p>
+  	</div>
+  	<div class="modal-body">
+  	  <!-- displayed if the user has enough credits, in the first step -->
+  	  <p>Essa ação vai custar R$ <span class="buyValue">1</span>. Você tem R$ <span class="saldo">10</span>.</p>
 
-	  <!-- displayed if something went wrong with the server -->
-	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
-	  <p class="alert alert-error">Alguma coisa deu errado. Por favor, recarregue a página.</p>
+  	  <!-- displayed if something went wrong with the server -->
+  	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+  	  <p class="alert alert-error">Alguma coisa deu errado. Por favor, recarregue a página.</p>
 
-	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
-	  <!-- displayed if the user doesn't have enough credits -->
-	  <p class="alert alert-warning">Essa ação vai custar R$ <span class="buyValue"></span> credits. Você tem somente R$ <span class="saldo">0</span> créditos disponíveis. Clique abaixo para adquirir créditos.</p>
+  	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+  	  <!-- displayed if the user doesn't have enough credits -->
+  	  <p class="alert alert-warning">Essa ação vai custar R$ <span class="buyValue"></span> credits. Você tem somente R$ <span class="saldo">0</span> créditos disponíveis. Clique abaixo para adquirir créditos.</p>
 
-	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
-	  <!-- displayed when the operation is completed -->
-	  <div class="done">
-		<p class="alert alert-info">O nome do usuário foi liberado: <span class="nome">Pierre Andrews</span>.</p>
-		<p>Créditos que sobraram: R$ <span class="saldo">3</span>.</p>
-		<p>Quer adicionar o usuário à lista de selecionados para poder encontrá-lo com facilidade?</p>
-	  </div>
+  	  <hr> <!-- hr is not really there, just to show the different stuff in the layout -->
+  	  <!-- displayed when the operation is completed -->
+  	  <div class="done">
+  		<p class="alert alert-info">O nome do usuário foi liberado: <span class="nome">Pierre Andrews</span>.</p>
+  		<p>Créditos que sobraram: R$ <span class="saldo">3</span>.</p>
+  		<p>Quer adicionar o usuário à lista de selecionados para poder encontrá-lo com facilidade?</p>
+  	  </div>
 
-	</div>
-	<div class="modal-footer">
-	  <!-- cancel button -->
-	  <a class="btn" data-dismiss="modal">Agora Não</a>
-	  <!-- button displayed if the user doesn't have enought credits -->
-	  <a href="#" class="btn btn-warning">Adquirir Créditos</a>
-	  <!-- button to buy the name in the first step and to select the user in the second -->
-	  <a class="btn btn-primary buyBtn">Ok</a>
-	</div>
+  	</div>
+  	<div class="modal-footer">
+  	  <!-- cancel button -->
+  	  <a class="btn" data-dismiss="modal">Agora Não</a>
+  	  <!-- button displayed if the user doesn't have enought credits -->
+  	  <a href="#" class="btn btn-warning">Adquirir Créditos</a>
+  	  <!-- button to buy the name in the first step and to select the user in the second -->
+  	  <a class="btn btn-primary buyBtn">Ok</a>
+  	</div>
   </div>
 
     <!-- Le javascript
